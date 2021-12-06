@@ -1,0 +1,36 @@
+{
+    "varian" : [
+        {
+            "name" : "",
+            "mutation" : "",
+            "first-country" : "",
+            "know-date" : ""
+        }
+    ],
+    "protection-rule" : [
+        {
+            "name" : "",
+            "description" : "",
+            "image" : ""
+        }
+    ],
+    "city-rule" : [
+        {
+            "risk-level" : "",
+            "can" : [
+                {
+                    "rule" : "",
+                    "description" : "",
+                    "image" : ""
+                }
+            ],
+            "cannot" : [
+                {
+                    "rule": "",
+                    "description": "",
+                    "image": ""
+                }
+            ]
+        }
+    ]
+}
