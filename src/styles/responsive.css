@@ -1,0 +1,58 @@
+@media screen and (max-width: 550px) {
+    .header_title {
+        font-weight: 100;
+        font-size: 1.5em;
+    }
+
+    .nav {
+        margin-top: 80px;
+        z-index: 10;
+        background-color: #fff;
+        width: 300px;
+        position: absolute;
+        left: 0;
+
+        /* This trasform moves the drawer off canvas. */
+        -webkit-transform: translate(-320px, 0);
+        transform: translate(-320px, 0);
+        visibility: hidden;
+
+        /* Optionally, we animate the drawer. */
+        transition: transform 0.3s ease;
+    }
+
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        visibility: visible;
+    }
+
+    .nav_item {
+        display: list-item;
+        list-style-type: none;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav_item a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 551px) {
+    .header_menu {
+        display: none;
+    }
+    
+    .nav {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
