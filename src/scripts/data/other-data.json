@@ -1,27 +1,194 @@
 {
     "varian" : [
         {
-            "name" : "",
+            "name" : "SARS-Cov-19",
             "mutation" : "",
-            "first-country" : "",
-            "know-date" : ""
+            "first-country" : "China",
+            "know-date" : "Desember 2019",
+            "symptoms" : " Demam, sakit tenggorokan, nyeri otot, batuk, diare, mual, hilangnya indera perasa dan penciuman."
+        },
+        {
+            "name" : "Alfa",
+            "mutation" : "B.1.1.7",
+            "first-country" : "Inggris",
+            "know-date" : "September 2020",
+            "symptoms" : "Demam, sesak napas, nyeri pada dada, batuk, keluhan pada saluran pencernaan, hilangnya indera perasa dan penciuman."
+        },
+        {
+            "name" : "Beta",
+            "mutation" : "B.1.351",
+            "first-country" : "Afrika",
+            "know-date" : "Oktober 2020",
+            "symptoms" : "Demam, sesak napas, nyeri pada dada, batuk, keluhan pada saluran pencernaan, hilangnya indera perasa dan penciuman."
+        },
+        {
+            "name" : "Delta",
+            "mutation" : "B.1.617.2",
+            "first-country" : "India",
+            "know-date" : "Oktober 2020",
+            "symptoms" : "Demam, sesak napas, sakit tenggorokan, hilangnya indera perasa dan penciuman, sakit kepala, pilek, batuk, kelelahan."
+        },
+        {
+            "name" : "Gamma",
+            "mutation" : "P.1",
+            "first-country" : "Brazil",
+            "know-date" : "November 2020",
+            "symptoms" : "Demam, sesak napas, sakit kepala, sakit tenggorokan, batuk, pilek."
+        },
+        {
+            "name" : "Epilson",
+            "mutation" : "B.1420",
+            "first-country" : "Amerika Serikat",
+            "know-date" : "Juli 2020",
+            "symptoms" : "sesak napas, sakit kepala, sakit tenggorokan, batuk, pilek, demam."
+        },
+        {
+            "name" : "Lambda",
+            "mutation" : "C.37",
+            "first-country" : "Peru",
+            "know-date" : "Desember 2020",
+            "symptoms" : "Demam, satuk, pilek, nyeri otot, sakit kepala, lemas, gangguan indera penciuman (anosmia)."
+        },
+        {
+            "name" : "Zeta",
+            "mutation" : "P.2",
+            "first-country" : "Brazil",
+            "know-date" : "2020",
+            "symptoms" : "Demam, sesak napas, sakit kepala, sakit tenggorokan, patuk, pilek."
+        },
+        {
+            "name" : "Eta",
+            "mutation" : "B.1.525",
+            "first-country" : "Nigeria, UK",
+            "know-date" : "Desember 2020",
+            "symptoms" : "Sesak napas, demam, batuk, pilek, perubahan indera penciuman dan perasa."
+        },
+        {
+            "name" : "Theta",
+            "mutation" : "P.3",
+            "first-country" : "Filipina",
+            "know-date" : "Desember 2021",
+            "symptoms" : "  Demam, batuk, pilek, nyeri otot, sakit kepala, lemas, gangguan indera penciuman (anosmia)."
+        },
+        {
+            "name" : "Lota",
+            "mutation" : "B.1.526",
+            "first-country" : "New York",
+            "know-date" : "November 2021",
+            "symptoms" : "Demam, batuk, pilek, nyeri otot, sakit kepala, lemas, gangguan indera penciuman (anosmia)."
+        },
+        {
+            "name" : "Kappa",
+            "mutation" : "B.1.617.1",
+            "first-country" : "India",
+            "know-date" : "Oktober 2020",
+            "symptoms" : "Sesak nafas, sakit perut, diare, demam tinggi, pilek, batuk, mata merah dan berair."
+        },
+        {
+            "name" : "Umicorn",
+            "mutation" : "B.1.1.529",
+            "first-country" : "Afrika Selatan",
+            "know-date" : "November 2021",
+            "symptoms" : "Hilangnya indera penciuman (anosmia), kelelahan, demam tinggi, detak jantung tinggi."
+        },
+        {
+            "name" : "Mu",
+            "mutation" : "B.1.621",
+            "first-country" : "Kolombia",
+            "know-date" : "Januari 2021",
+            "symptoms" : "Batuk, demam, sesak napas, hilangnya indera perasa dan penciuman."
         }
     ],
     "protection-rule" : [
         {
-            "name" : "",
-            "description" : "",
-            "image" : ""
+            "name" : "Mencuci Tangan",
+            "description" : "Rutin mencuci tangan hingga bersih menggunakan sabun dan air mengalir merupakan salah satu protokol kesehatan yang cukup efektif untuk mencegah penularan virus corona. Untuk hasil yang maksimal disarankan untuk mencuci tangan setidaknya selama 20 menit",
+            "image" : "../icons/cuci-tangan.svg"
+        },
+        {
+            "name" : "Memakai Masker",
+            "description" : "Gunakan masker saat beraktifitas di luar rumah atau ruangan",
+            "image" : "../icons/masker.svg"
+        },
+        {
+            "name" : "Menjaga Jarak",
+            "description" : "Menjaga jarak dengan orang lain minimal 1 meter untuk menghindari terkena droplets dari lawan bicara, batuk, atau bersin, serta menghindari kerumunan, keramaian, dan berdesakan",
+            "image" : "../icons/jaga-jarak.svg"
+        },
+        {
+            "name" : "Menjauhi Kerumunan",
+            "description" : "Menjauhi kerumunan saat berada di luar rumah. Oleh sebab itu, hindari tempat keramaian terutama bila sedang sakit atau berusia diatas 60 tahun (lansia).",
+            "image" : "../icons/kerumunan.svg"
+        },
+        {
+            "name" : "Mengurangi Mobilitas",
+            "description" : "Tidak keluar rumah kecuali terdapat keadaan yang mendesak, semakin banyak dirimu menghabiskan waktu di luar rumah, maka semakin tinggi pula terpapar virus Covid-19.",
+            "image" : "../icons/mobilitas.svg"
         }
     ],
     "city-rule" : [
         {
-            "risk-level" : "",
+            "risk-level" : "PPKM Level 1",
             "can" : [
                 {
-                    "rule" : "",
-                    "description" : "",
-                    "image" : ""
+                    "rule": "Kegiatan Belajar Mengajar",
+                    "description": "Dapat melakukan pembelajaran tatap muka dengan maksimal kapasitas maksimal 50%",
+                    "image" : "../icons/sekolah.svg"
+                },
+                {
+                    "rule": "Sektor Non Esensial",
+                    "description": "Dapat dilakukan Work From Office (WFO) dengan kapasiras 75%",
+                    "image": "../icons/non-esensial.svg"
+                },
+                {
+                    "rule": "Supermarket, hypermarket, pasar tradisional, toko kelontong dan pasar swalayan yang menjual kebutuhan sehari-hari",
+                    "description": "Diizinkan dibuka dengan kapasitas 100% sampai pukul 21.00 setempat",
+                    "image": "../icons/supermarket.svg"
+                },
+                {
+                    "rule": "Pasar rakyat yang menjual barang non kebutuhan sehari-hari",
+                    "description": "Diizinkan dengan kapasitas pengunjung 100%",
+                    "image": "../icons/pasar-rakyat.svg"
+                },
+                {
+                    "rule": "Restoran/warung makan",
+                    "description": "Diizinkan buka dengan kapasitas 75% sampai pukul 22.00 setempat",
+                    "image": "../icons/restoran.svg"
+                },
+                {
+                    "rule": "Mall",
+                    "description": "Diizinkan buka dengan kapasitas 100% sampai pukul 22.00 setempat",
+                    "image": "../icons/mall.svg"
+                },
+                {
+                    "rule": "Bioskop",
+                    "description": "Diizinkan buka dengan kapasitas maksimal 75%",
+                    "image": "../icons/bioskop.svg"
+                },
+                {
+                    "rule": "Tempat ibadah",
+                    "description": "Diizinkan buka dengan kapasitas maksimal 75%",
+                    "image": "../icons/tampat-ibadah.svg"
+                },
+                {
+                    "rule": "Wisata umum",
+                    "description": "Diizinkan buka dengan kapasitas maksimal 75%",
+                    "image": "../icons/wisata-umum.svg"
+                },
+                {
+                    "rule": "Kegiatan di pusat kebugaran, kegiatan seni budaya, olahraga dan sosial kemasyarakatan",
+                    "description": "Diizinkan buka dengan kapasitas maksimal 75%",
+                    "image": "../icons/gym.svg"
+                },
+                {
+                    "rule": "Resepsi pernikahan",
+                    "description": "Diizinkan dengan jumlah pengunjung 75% dan tidak boleh makan ditempat",
+                    "image": "../icons/resepsi-pernikahan.svg"
+                },
+                {
+                    "rule": "Transportasi umum",
+                    "description": "Diizinkan dengan kapasitas penumpang maksimal 100%",
+                    "image": "../icons/transportasi-umum.svg"
                 }
             ],
             "cannot" : [
@@ -29,6 +196,145 @@
                     "rule": "",
                     "description": "",
                     "image": ""
+                }
+            ]
+        },
+        {
+            "risk-level" : "PPKM Level 2",
+            "can" : [
+                {
+                    "rule": "Kegiatan Belajar Mengajar",
+                    "description": "Dapat melakukan pembelajaran tatap muka dengan maksimal kapasitas maksimal 50%",
+                    "image" : "../icons/sekolah.svg"
+                },
+                {
+                    "rule": "Sektor Non Esensial",
+                    "description": "Dapat dilakukan Work From Office (WFO) dengan kapasiras 50%",
+                    "image": "../icons/non-esensial.svg"
+                },
+                {
+                    "rule": "Supermarket, hypermarket, pasar tradisional, toko kelontong dan pasar swalayan yang menjual kebutuhan sehari-hari",
+                    "description": "Diizinkan dibuka dengan kapasitas 75% sampai pukul 21.00 setempat",
+                    "image": "../icons/supermarket.svg"
+                },
+                {
+                    "rule": "Pasar rakyat yang menjual barang non kebutuhan sehari-hari",
+                    "description": "Diizinkan dengan kapasitas pengunjung 75% sampai pukul 18.00 setempat",
+                    "image": "../icons/pasar-rakyat.svg"
+                },
+                {
+                    "rule": "Restoran/warung makan",
+                    "description": "Diizinkan buka dengan kapasitas 50% sampai pukul 21.00 setempat",
+                    "image": "../icons/restoran.svg"
+                },
+                {
+                    "rule": "Mall",
+                    "description": "Diizinkan buka dengan kapasitas 50% sampai pukul 22.00 setempat",
+                    "image": "../icons/mall.svg"
+                },
+                {
+                    "rule": "Bioskop",
+                    "description": "Diizinkan buka dengan kapasitas maksimal 70%",
+                    "image": "../icons/bioskop.svg"
+                },
+                {
+                    "rule": "Tempat ibadah",
+                    "description": "Diizinkan buka dengan kapasitas maksimal 75%",
+                    "image": "../icons/tempat-ibadah.svg"
+                },
+                {
+                    "rule": "Wisata umum",
+                    "description": "Diizinkan buka dengan kapasitas maksimal 50%",
+                    "image": "../icons/wisata-umum.svg"
+                },
+                {
+                    "rule": "Kegiatan di pusat kebugaran, kegiatan seni budaya, olahraga dan sosial kemasyarakatan",
+                    "description": "Diizinkan buka dengan kapasitas maksimal 50%",
+                    "image": "../icons/gym.svg"
+                },
+                {
+                    "rule": "Resepsi pernikahan",
+                    "description": "Diizinkan dengan jumlah pengunjung 75% dan tidak boleh makan ditempat",
+                    "image": "../icons/resepsi-pernikahan.svg"
+                },
+                {
+                    "rule": "Transportasi umum",
+                    "description": "Diizinkan dengan kapasitas penumpang maksimal 100%",
+                    "image": "../icons/transportasi-umum.svg"
+                }
+            ],
+            "cannot" : [
+                {
+                    "rule": "",
+                    "description": "",
+                    "image": ""
+                }
+            ]
+        },
+        {
+            "risk-level" : "PPKM Level 3",
+            "can" : [
+                {
+                    "rule": "Kegiatan Belajar Mengajar",
+                    "description": "Dapat melakukan pembelajaran tatap muka dengan maksimal kapasitas maksimal 50%",
+                    "image" : "../icons/sekolah.svg"
+                },
+                {
+                    "rule": "Sektor Non Esensial",
+                    "description": "Dapat dilakukan Work From Office (WFO) dengan kapasiras 50%",
+                    "image": "../icons/non-esensial.svg"
+                },
+                {
+                    "rule": "Supermarket, hypermarket, pasar tradisional, toko kelontong dan pasar swalayan yang menjual kebutuhan sehari-hari",
+                    "description": "Diizinkan dibuka dengan kapasitas 50% sampai pukul 21.00 setempat",
+                    "image": "../icons/supermarket.svg"
+                },
+                {
+                    "rule": "Pasar rakyat yang menjual barang non kebutuhan sehari-hari",
+                    "description": "Diizinkan dengan kapasitas pengunjung 50% sampai pukul 18.00 setempat",
+                    "image": "../icons/pasar-rakyat.svg"
+                },
+                {
+                    "rule": "Restoran/warung makan",
+                    "description": "Diizinkan buka dengan kapasitas 50% sampai pukul 21.00 setempat",
+                    "image": "../icons/restoran.svg"
+                },
+                {
+                    "rule": "Mall",
+                    "description": "Diizinkan buka dengan kapasitas 50% sampai pukul 21.00 setempat",
+                    "image": "../icons/mall.svg"
+                },
+                {
+                    "rule": "Bioskop",
+                    "description": "Diizinkan buka dengan kapasitas maksimal 50%",
+                    "image": "../icons/bioskop.svg"
+                },
+                {
+                    "rule": "Tempat ibadah",
+                    "description": "Diizinkan buka dengan kapasitas maksimal 50%",
+                    "image": "../icons/tempat-ibadah.svg"
+                },
+                {
+                    "rule": "Wisata umum",
+                    "description": "Diizinkan buka dengan kapasitas maksimal 25%",
+                    "image": "../icons/wisata-umum.svg"
+                },
+                {
+                    "rule": "Resepsi pernikahan",
+                    "description": "Diizinkan dengan jumlah pengunjung 50% dan tidak boleh makan ditempat",
+                    "image": "../icons/resepsi-pernikahan.svg"
+                },
+                {
+                    "rule": "Transportasi umum",
+                    "description": "Diizinkan dengan kapasitas penumpang maksimal 100%",
+                    "image": "../icons/transportasi-umum.svg"
+                }
+            ],
+            "cannot" : [
+                {
+                    "rule": "Kegiatan di pusat kebugaran, kegiatan seni budaya, olahraga dan sosial kemasyarakatan",
+                    "description": "Tidak diizinkan buka",
+                    "image": "../icons/gym.svg"
                 }
             ]
         }
