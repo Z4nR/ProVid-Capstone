@@ -1,6 +1,7 @@
 import 'regenerator-runtime'
 import '../styles/main.css'
 import '../styles/responsive.css'
+import 'leaflet/dist/leaflet.css'
 import App from './view/app'
 
 const app = new App({

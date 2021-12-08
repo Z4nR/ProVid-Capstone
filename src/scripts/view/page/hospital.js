@@ -1,3 +1,5 @@
+import L from 'leaflet'
+
 const RumahSakit = {
   async render () {
     return `
@@ -8,7 +10,9 @@ const RumahSakit = {
   },
 
   async afterRender () {
-    const map = L.map('map').setView([51.505, -0.09], 13)
+    const mapLocation = [0.789, 119.9213]
+    const mapZoom = 5
+    const map = L.map('map').setView(mapLocation, mapZoom)
 
     L.Icon.Default.mergeOptions({
       iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
@@ -19,10 +23,6 @@ const RumahSakit = {
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map)
-
-    L.marker([51.5, -0.09]).addTo(map)
-      .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-      .openPopup()
   }
 }
 export default RumahSakit
