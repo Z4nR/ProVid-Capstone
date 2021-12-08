@@ -1,14 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
-   
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: white;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    color: #424242;
 }
    
 /*
@@ -90,26 +97,31 @@ header-container {
   Main Content
 */  
 main {
-    padding: 32px;
-    flex: 1;
-} 
-.content {
-    margin: 0 auto;
-    min-height: 100%;
-} 
-.content .content__heading {
-    font-weight: normal;
+    padding: 12px;
+    height: 800px;
+    overflow: visible;
+}
+
+.zona {
+    height: fit-content;
 }
   
 /*
   Footer
 */ 
 footer {
+    position: absolute;
+    background-color: #aaa;
     padding: 16px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 footer p {
     text-align: center;
-    color: #aaaaaa;
+    color: black;
+    font-size: 16px;
 }
 
 /*
@@ -128,3 +140,11 @@ footer p {
  .skip-link:focus {
     top: 0;
  }
+
+/*
+  Map
+*/
+#map { 
+    height: 775px;
+    border-radius: 5px;
+}
