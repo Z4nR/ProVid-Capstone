@@ -103,27 +103,27 @@
         {
             "name" : "Mencuci Tangan",
             "description" : "Rutin mencuci tangan hingga bersih menggunakan sabun dan air mengalir merupakan salah satu protokol kesehatan yang cukup efektif untuk mencegah penularan virus corona. Untuk hasil yang maksimal disarankan untuk mencuci tangan setidaknya selama 20 menit",
-            "image" : "../icons/cuci-tangan.svg"
+            "image" : "../image/cuci-tangan.svg"
         },
         {
             "name" : "Memakai Masker",
             "description" : "Gunakan masker saat beraktifitas di luar rumah atau ruangan",
-            "image" : "../icons/masker.svg"
+            "image" : "../image/masker.svg"
         },
         {
             "name" : "Menjaga Jarak",
             "description" : "Menjaga jarak dengan orang lain minimal 1 meter untuk menghindari terkena droplets dari lawan bicara, batuk, atau bersin, serta menghindari kerumunan, keramaian, dan berdesakan",
-            "image" : "../icons/jaga-jarak.svg"
+            "image" : "../image/jaga-jarak.svg"
         },
         {
             "name" : "Menjauhi Kerumunan",
             "description" : "Menjauhi kerumunan saat berada di luar rumah. Oleh sebab itu, hindari tempat keramaian terutama bila sedang sakit atau berusia diatas 60 tahun (lansia).",
-            "image" : "../icons/kerumunan.svg"
+            "image" : "../image/kerumunan.svg"
         },
         {
             "name" : "Mengurangi Mobilitas",
             "description" : "Tidak keluar rumah kecuali terdapat keadaan yang mendesak, semakin banyak dirimu menghabiskan waktu di luar rumah, maka semakin tinggi pula terpapar virus Covid-19.",
-            "image" : "../icons/mobilitas.svg"
+            "image" : "../image/mobilitas.svg"
         }
     ],
     "city-rule" : [
@@ -133,62 +133,62 @@
                 {
                     "rule": "Kegiatan Belajar Mengajar",
                     "description": "Dapat melakukan pembelajaran tatap muka dengan maksimal kapasitas maksimal 50%",
-                    "image" : "../icons/sekolah.svg"
+                    "image" : "../image/sekolah.svg"
                 },
                 {
                     "rule": "Sektor Non Esensial",
                     "description": "Dapat dilakukan Work From Office (WFO) dengan kapasiras 75%",
-                    "image": "../icons/non-esensial.svg"
+                    "image": "../image/non-esensial.svg"
                 },
                 {
                     "rule": "Supermarket, hypermarket, pasar tradisional, toko kelontong dan pasar swalayan yang menjual kebutuhan sehari-hari",
                     "description": "Diizinkan dibuka dengan kapasitas 100% sampai pukul 21.00 setempat",
-                    "image": "../icons/supermarket.svg"
+                    "image": "../image/supermarket.svg"
                 },
                 {
                     "rule": "Pasar rakyat yang menjual barang non kebutuhan sehari-hari",
                     "description": "Diizinkan dengan kapasitas pengunjung 100%",
-                    "image": "../icons/pasar-rakyat.svg"
+                    "image": "../image/pasar-rakyat.svg"
                 },
                 {
                     "rule": "Restoran/warung makan",
                     "description": "Diizinkan buka dengan kapasitas 75% sampai pukul 22.00 setempat",
-                    "image": "../icons/restoran.svg"
+                    "image": "../image/restoran.svg"
                 },
                 {
                     "rule": "Mall",
                     "description": "Diizinkan buka dengan kapasitas 100% sampai pukul 22.00 setempat",
-                    "image": "../icons/mall.svg"
+                    "image": "../image/mall.svg"
                 },
                 {
                     "rule": "Bioskop",
                     "description": "Diizinkan buka dengan kapasitas maksimal 75%",
-                    "image": "../icons/bioskop.svg"
+                    "image": "../image/bioskop.svg"
                 },
                 {
                     "rule": "Tempat ibadah",
                     "description": "Diizinkan buka dengan kapasitas maksimal 75%",
-                    "image": "../icons/tampat-ibadah.svg"
+                    "image": "../image/tampat-ibadah.svg"
                 },
                 {
                     "rule": "Wisata umum",
                     "description": "Diizinkan buka dengan kapasitas maksimal 75%",
-                    "image": "../icons/wisata-umum.svg"
+                    "image": "../image/wisata-umum.svg"
                 },
                 {
                     "rule": "Kegiatan di pusat kebugaran, kegiatan seni budaya, olahraga dan sosial kemasyarakatan",
                     "description": "Diizinkan buka dengan kapasitas maksimal 75%",
-                    "image": "../icons/gym.svg"
+                    "image": "../image/gym.svg"
                 },
                 {
                     "rule": "Resepsi pernikahan",
                     "description": "Diizinkan dengan jumlah pengunjung 75% dan tidak boleh makan ditempat",
-                    "image": "../icons/resepsi-pernikahan.svg"
+                    "image": "../image/resepsi-pernikahan.svg"
                 },
                 {
                     "rule": "Transportasi umum",
                     "description": "Diizinkan dengan kapasitas penumpang maksimal 100%",
-                    "image": "../icons/transportasi-umum.svg"
+                    "image": "../image/transportasi-umum.svg"
                 }
             ],
             "cannot" : [
@@ -205,62 +205,62 @@
                 {
                     "rule": "Kegiatan Belajar Mengajar",
                     "description": "Dapat melakukan pembelajaran tatap muka dengan maksimal kapasitas maksimal 50%",
-                    "image" : "../icons/sekolah.svg"
+                    "image" : "../image/sekolah.svg"
                 },
                 {
                     "rule": "Sektor Non Esensial",
                     "description": "Dapat dilakukan Work From Office (WFO) dengan kapasiras 50%",
-                    "image": "../icons/non-esensial.svg"
+                    "image": "../image/non-esensial.svg"
                 },
                 {
                     "rule": "Supermarket, hypermarket, pasar tradisional, toko kelontong dan pasar swalayan yang menjual kebutuhan sehari-hari",
                     "description": "Diizinkan dibuka dengan kapasitas 75% sampai pukul 21.00 setempat",
-                    "image": "../icons/supermarket.svg"
+                    "image": "../image/supermarket.svg"
                 },
                 {
                     "rule": "Pasar rakyat yang menjual barang non kebutuhan sehari-hari",
                     "description": "Diizinkan dengan kapasitas pengunjung 75% sampai pukul 18.00 setempat",
-                    "image": "../icons/pasar-rakyat.svg"
+                    "image": "../image/pasar-rakyat.svg"
                 },
                 {
                     "rule": "Restoran/warung makan",
                     "description": "Diizinkan buka dengan kapasitas 50% sampai pukul 21.00 setempat",
-                    "image": "../icons/restoran.svg"
+                    "image": "../image/restoran.svg"
                 },
                 {
                     "rule": "Mall",
                     "description": "Diizinkan buka dengan kapasitas 50% sampai pukul 22.00 setempat",
-                    "image": "../icons/mall.svg"
+                    "image": "../image/mall.svg"
                 },
                 {
                     "rule": "Bioskop",
                     "description": "Diizinkan buka dengan kapasitas maksimal 70%",
-                    "image": "../icons/bioskop.svg"
+                    "image": "../image/bioskop.svg"
                 },
                 {
                     "rule": "Tempat ibadah",
                     "description": "Diizinkan buka dengan kapasitas maksimal 75%",
-                    "image": "../icons/tempat-ibadah.svg"
+                    "image": "../image/tempat-ibadah.svg"
                 },
                 {
                     "rule": "Wisata umum",
                     "description": "Diizinkan buka dengan kapasitas maksimal 50%",
-                    "image": "../icons/wisata-umum.svg"
+                    "image": "../image/wisata-umum.svg"
                 },
                 {
                     "rule": "Kegiatan di pusat kebugaran, kegiatan seni budaya, olahraga dan sosial kemasyarakatan",
                     "description": "Diizinkan buka dengan kapasitas maksimal 50%",
-                    "image": "../icons/gym.svg"
+                    "image": "../image/gym.svg"
                 },
                 {
                     "rule": "Resepsi pernikahan",
                     "description": "Diizinkan dengan jumlah pengunjung 75% dan tidak boleh makan ditempat",
-                    "image": "../icons/resepsi-pernikahan.svg"
+                    "image": "../image/resepsi-pernikahan.svg"
                 },
                 {
                     "rule": "Transportasi umum",
                     "description": "Diizinkan dengan kapasitas penumpang maksimal 100%",
-                    "image": "../icons/transportasi-umum.svg"
+                    "image": "../image/transportasi-umum.svg"
                 }
             ],
             "cannot" : [
@@ -277,64 +277,64 @@
                 {
                     "rule": "Kegiatan Belajar Mengajar",
                     "description": "Dapat melakukan pembelajaran tatap muka dengan maksimal kapasitas maksimal 50%",
-                    "image" : "../icons/sekolah.svg"
+                    "image" : "../image/sekolah.svg"
                 },
                 {
                     "rule": "Sektor Non Esensial",
                     "description": "Dapat dilakukan Work From Office (WFO) dengan kapasiras 50%",
-                    "image": "../icons/non-esensial.svg"
+                    "image": "../image/non-esensial.svg"
                 },
                 {
                     "rule": "Supermarket, hypermarket, pasar tradisional, toko kelontong dan pasar swalayan yang menjual kebutuhan sehari-hari",
                     "description": "Diizinkan dibuka dengan kapasitas 50% sampai pukul 21.00 setempat",
-                    "image": "../icons/supermarket.svg"
+                    "image": "../image/supermarket.svg"
                 },
                 {
                     "rule": "Pasar rakyat yang menjual barang non kebutuhan sehari-hari",
                     "description": "Diizinkan dengan kapasitas pengunjung 50% sampai pukul 18.00 setempat",
-                    "image": "../icons/pasar-rakyat.svg"
+                    "image": "../image/pasar-rakyat.svg"
                 },
                 {
                     "rule": "Restoran/warung makan",
                     "description": "Diizinkan buka dengan kapasitas 50% sampai pukul 21.00 setempat",
-                    "image": "../icons/restoran.svg"
+                    "image": "../image/restoran.svg"
                 },
                 {
                     "rule": "Mall",
                     "description": "Diizinkan buka dengan kapasitas 50% sampai pukul 21.00 setempat",
-                    "image": "../icons/mall.svg"
+                    "image": "../image/mall.svg"
                 },
                 {
                     "rule": "Bioskop",
                     "description": "Diizinkan buka dengan kapasitas maksimal 50%",
-                    "image": "../icons/bioskop.svg"
+                    "image": "../image/bioskop.svg"
                 },
                 {
                     "rule": "Tempat ibadah",
                     "description": "Diizinkan buka dengan kapasitas maksimal 50%",
-                    "image": "../icons/tempat-ibadah.svg"
+                    "image": "../image/tempat-ibadah.svg"
                 },
                 {
                     "rule": "Wisata umum",
                     "description": "Diizinkan buka dengan kapasitas maksimal 25%",
-                    "image": "../icons/wisata-umum.svg"
+                    "image": "../image/wisata-umum.svg"
                 },
                 {
                     "rule": "Resepsi pernikahan",
                     "description": "Diizinkan dengan jumlah pengunjung 50% dan tidak boleh makan ditempat",
-                    "image": "../icons/resepsi-pernikahan.svg"
+                    "image": "../image/resepsi-pernikahan.svg"
                 },
                 {
                     "rule": "Transportasi umum",
                     "description": "Diizinkan dengan kapasitas penumpang maksimal 100%",
-                    "image": "../icons/transportasi-umum.svg"
+                    "image": "../image/transportasi-umum.svg"
                 }
             ],
             "cannot" : [
                 {
                     "rule": "Kegiatan di pusat kebugaran, kegiatan seni budaya, olahraga dan sosial kemasyarakatan",
                     "description": "Tidak diizinkan buka",
-                    "image": "../icons/gym.svg"
+                    "image": "../image/gym.svg"
                 }
             ]
         }

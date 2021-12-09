@@ -40,7 +40,7 @@ header-container {
 }
 
 .header_title {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 2em;
     margin: 0.5em 0.25em;
     display: inline-block;
@@ -104,6 +104,73 @@ main {
 
 .zona {
     height: fit-content;
+}
+
+/*
+ * latest
+ */
+
+ .latest {
+    width: 100%;
+    text-align: center;
+}
+
+.latest__label {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.latest__label::after {
+    display: block;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.update {
+    font-weight: lighter;
+    text-align: right;
+}
+
+/*
+ * post
+ */
+
+.posts {
+    margin: 64px;
+    text-align: left;
+    width: auto;
+}
+
+/*
+ * post item
+ */
+
+.post-item {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.post-item__content {
+    padding: 32px;
+}
+
+.post-item-vaksin {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+    padding: 16px;
+    grid-column-start: 1; /* box2 akan dimulai dari kolom garis ketiga */
+    grid-row-start: 1; /* dan baris garis pertama */
+    grid-row-end: 3; /* kemudian berakhir di baris garis ketiga */
+}
+
+.post-item__title {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #999;
 }
   
 /*
