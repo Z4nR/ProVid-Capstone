@@ -1,11 +1,11 @@
 const province = {
-  "type": "FeatureCollection",
-  "features": [
+  type: 'FeatureCollection',
+  features: [
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -724,19 +724,19 @@ const province = {
           ]
         ]
       },
-      "id": 52,
-      "properties": {
-        "ID": 2,
-        "kode": 52,
-        "Propinsi": "NUSATENGGARA BARAT",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 52,
+      properties: {
+        ID: 2,
+        kode: 52,
+        Propinsi: 'NUSATENGGARA BARAT',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'Polygon',
+        coordinates: [
           [
             [
               122.188141,
@@ -1063,19 +1063,19 @@ const province = {
           ]
         ]
       },
-      "id": 75,
-      "properties": {
-        "ID": 3,
-        "kode": 75,
-        "Propinsi": "GORONTALO",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 75,
+      properties: {
+        ID: 3,
+        kode: 75,
+        Propinsi: 'GORONTALO',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -2298,19 +2298,19 @@ const province = {
           ]
         ]
       },
-      "id": 74,
-      "properties": {
-        "ID": 4,
-        "kode": 74,
-        "Propinsi": "SULAWESI TENGGARA",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 74,
+      properties: {
+        ID: 4,
+        kode: 74,
+        Propinsi: 'SULAWESI TENGGARA',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'Polygon',
+        coordinates: [
           [
             [
               110.011826,
@@ -2431,19 +2431,19 @@ const province = {
           ]
         ]
       },
-      "id": 34,
-      "properties": {
-        "ID": 5,
-        "kode": 34,
-        "Propinsi": "DAERAH ISTIMEWA YOGYAKARTA",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 34,
+      properties: {
+        ID: 5,
+        kode: 34,
+        Propinsi: 'DAERAH ISTIMEWA YOGYAKARTA',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -3038,19 +3038,19 @@ const province = {
           ]
         ]
       },
-      "id": 33,
-      "properties": {
-        "ID": 6,
-        "kode": 33,
-        "Propinsi": "JAWA TENGAH",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 33,
+      properties: {
+        ID: 6,
+        kode: 33,
+        Propinsi: 'JAWA TENGAH',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -3385,19 +3385,19 @@ const province = {
           ]
         ]
       },
-      "id": 36,
-      "properties": {
-        "ID": 7,
-        "kode": 36,
-        "Propinsi": "BANTEN",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 36,
+      properties: {
+        ID: 7,
+        kode: 36,
+        Propinsi: 'BANTEN',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -4360,19 +4360,19 @@ const province = {
           ]
         ]
       },
-      "id": 35,
-      "properties": {
-        "ID": 8,
-        "kode": 35,
-        "Propinsi": "JAWA TIMUR",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 35,
+      properties: {
+        ID: 8,
+        kode: 35,
+        Propinsi: 'JAWA TIMUR',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -6111,19 +6111,19 @@ const province = {
           ]
         ]
       },
-      "id": 82,
-      "properties": {
-        "ID": 9,
-        "kode": 82,
-        "Propinsi": "MALUKU UTARA",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 82,
+      properties: {
+        ID: 9,
+        kode: 82,
+        Propinsi: 'MALUKU UTARA',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -9054,19 +9054,19 @@ const province = {
           ]
         ]
       },
-      "id": 81,
-      "properties": {
-        "ID": 10,
-        "kode": 81,
-        "Propinsi": "MALUKU",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 81,
+      properties: {
+        ID: 10,
+        kode: 81,
+        Propinsi: 'MALUKU',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -10273,19 +10273,19 @@ const province = {
           ]
         ]
       },
-      "id": 73,
-      "properties": {
-        "ID": 13,
-        "kode": 73,
-        "Propinsi": "SULAWESI SELATAN",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 73,
+      properties: {
+        ID: 13,
+        kode: 73,
+        Propinsi: 'SULAWESI SELATAN',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'Polygon',
+        coordinates: [
           [
             [
               106.721344,
@@ -10350,19 +10350,19 @@ const province = {
           ]
         ]
       },
-      "id": 31,
-      "properties": {
-        "ID": 14,
-        "kode": 31,
-        "Propinsi": "DKI JAKARTA",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 31,
+      properties: {
+        ID: 14,
+        kode: 31,
+        Propinsi: 'DKI JAKARTA',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'Polygon',
+        coordinates: [
           [
             [
               106.396103,
@@ -10807,19 +10807,19 @@ const province = {
           ]
         ]
       },
-      "id": 32,
-      "properties": {
-        "ID": 15,
-        "kode": 32,
-        "Propinsi": "JAWA BARAT",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 32,
+      properties: {
+        ID: 15,
+        kode: 32,
+        Propinsi: 'JAWA BARAT',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -16514,19 +16514,19 @@ const province = {
           ]
         ]
       },
-      "id": 91,
-      "properties": {
-        "ID": 16,
-        "kode": 91,
-        "Propinsi": "PAPUA",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 91,
+      properties: {
+        ID: 16,
+        kode: 91,
+        Propinsi: 'PAPUA',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -18449,19 +18449,19 @@ const province = {
           ]
         ]
       },
-      "id": 53,
-      "properties": {
-        "ID": 17,
-        "kode": 53,
-        "Propinsi": "NUSA TENGGARA TIMUR",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 53,
+      properties: {
+        ID: 17,
+        kode: 53,
+        Propinsi: 'NUSA TENGGARA TIMUR',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -18684,19 +18684,19 @@ const province = {
           ]
         ]
       },
-      "id": 51,
-      "properties": {
-        "ID": 18,
-        "kode": 51,
-        "Propinsi": "BALI",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 51,
+      properties: {
+        ID: 18,
+        kode: 51,
+        Propinsi: 'BALI',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -20211,19 +20211,19 @@ const province = {
           ]
         ]
       },
-      "id": 14,
-      "properties": {
-        "ID": 19,
-        "kode": 14,
-        "Propinsi": "RIAU",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 14,
+      properties: {
+        ID: 19,
+        kode: 14,
+        Propinsi: 'RIAU',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -24270,19 +24270,19 @@ const province = {
           ]
         ]
       },
-      "id": 21,
-      "properties": {
-        "ID": 76,
-        "kode": 21,
-        "Propinsi": "KEPULAUAN RIAU",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 21,
+      properties: {
+        ID: 76,
+        kode: 21,
+        Propinsi: 'KEPULAUAN RIAU',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -24653,19 +24653,19 @@ const province = {
           ]
         ]
       },
-      "id": 76,
-      "properties": {
-        "ID": 77,
-        "kode": 76,
-        "Propinsi": "SULAWESI BARAT",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 76,
+      properties: {
+        ID: 77,
+        kode: 76,
+        Propinsi: 'SULAWESI BARAT',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -26598,19 +26598,19 @@ const province = {
           ]
         ]
       },
-      "id": 72,
-      "properties": {
-        "ID": 20,
-        "kode": 72,
-        "Propinsi": "SULAWESI TENGAH",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 72,
+      properties: {
+        ID: 20,
+        kode: 72,
+        Propinsi: 'SULAWESI TENGAH',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -27237,19 +27237,19 @@ const province = {
           ]
         ]
       },
-      "id": 71,
-      "properties": {
-        "ID": 22,
-        "kode": 71,
-        "Propinsi": "SULAWESI UTARA",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 71,
+      properties: {
+        ID: 22,
+        kode: 71,
+        Propinsi: 'SULAWESI UTARA',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -34820,19 +34820,19 @@ const province = {
           ]
         ]
       },
-      "id": 92,
-      "properties": {
-        "ID": 23,
-        "kode": 92,
-        "Propinsi": "PAPUA BARAT",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 92,
+      properties: {
+        ID: 23,
+        kode: 92,
+        Propinsi: 'PAPUA BARAT',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -35961,19 +35961,19 @@ const province = {
           ]
         ]
       },
-      "id": 12,
-      "properties": {
-        "ID": 24,
-        "kode": 12,
-        "Propinsi": "SUMATERA UTARA",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 12,
+      properties: {
+        ID: 24,
+        kode: 12,
+        Propinsi: 'SUMATERA UTARA',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -36564,19 +36564,19 @@ const province = {
           ]
         ]
       },
-      "id": 19,
-      "properties": {
-        "ID": 25,
-        "kode": 19,
-        "Propinsi": "BANGKA BELITUNG",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 19,
+      properties: {
+        ID: 25,
+        kode: 19,
+        Propinsi: 'BANGKA BELITUNG',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -37475,19 +37475,19 @@ const province = {
           ]
         ]
       },
-      "id": 13,
-      "properties": {
-        "ID": 26,
-        "kode": 13,
-        "Propinsi": "SUMATERA BARAT",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 13,
+      properties: {
+        ID: 26,
+        kode: 13,
+        Propinsi: 'SUMATERA BARAT',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'Polygon',
+        coordinates: [
           [
             [
               105.785599,
@@ -38372,19 +38372,19 @@ const province = {
           ]
         ]
       },
-      "id": 16,
-      "properties": {
-        "ID": 28,
-        "kode": 16,
-        "Propinsi": "SUMATERA SELATAN",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 16,
+      properties: {
+        ID: 28,
+        kode: 16,
+        Propinsi: 'SUMATERA SELATAN',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'Polygon',
+        coordinates: [
           [
             [
               101.294159,
@@ -38959,19 +38959,19 @@ const province = {
           ]
         ]
       },
-      "id": 15,
-      "properties": {
-        "ID": 29,
-        "kode": 15,
-        "Propinsi": "JAMBI",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 15,
+      properties: {
+        ID: 29,
+        kode: 15,
+        Propinsi: 'JAMBI',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'Polygon',
+        coordinates: [
           [
             [
               103.777539,
@@ -39524,19 +39524,19 @@ const province = {
           ]
         ]
       },
-      "id": 18,
-      "properties": {
-        "ID": 30,
-        "kode": 18,
-        "Propinsi": "LAMPUNG",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 18,
+      properties: {
+        ID: 30,
+        kode: 18,
+        Propinsi: 'LAMPUNG',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -40035,19 +40035,19 @@ const province = {
           ]
         ]
       },
-      "id": 17,
-      "properties": {
-        "ID": 31,
-        "kode": 17,
-        "Propinsi": "BENGKULU",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 17,
+      properties: {
+        ID: 31,
+        kode: 17,
+        Propinsi: 'BENGKULU',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -40834,19 +40834,19 @@ const province = {
           ]
         ]
       },
-      "id": 11,
-      "properties": {
-        "ID": 32,
-        "kode": 11,
-        "Propinsi": "DI. ACEH",
-        "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
+      id: 11,
+      properties: {
+        ID: 32,
+        kode: 11,
+        Propinsi: 'DI. ACEH',
+        SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -46397,19 +46397,19 @@ const province = {
           ]
         ]
       },
-      "id": 61,
-      "properties": {
-        "ID": 12,
-        "kode": 61,
-        "Propinsi": "KALIMANTAN BARAT",
-        "SUMBER": "Batas Provinsi Desember 2019 Dukcapil (Skala tidak diketahui)"
+      id: 61,
+      properties: {
+        ID: 12,
+        kode: 61,
+        Propinsi: 'KALIMANTAN BARAT',
+        SUMBER: 'Batas Provinsi Desember 2019 Dukcapil (Skala tidak diketahui)'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -49476,18 +49476,18 @@ const province = {
           ]
         ]
       },
-      "properties": {
-        "ID": 27,
-        "kode": 62,
-        "Propinsi": "KALIMANTAN TENGAH",
-        "SUMBER": "Batas Provinsi Desember 2019 Dukcapil (Skala tidak diketahui)"
+      properties: {
+        ID: 27,
+        kode: 62,
+        Propinsi: 'KALIMANTAN TENGAH',
+        SUMBER: 'Batas Provinsi Desember 2019 Dukcapil (Skala tidak diketahui)'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -51738,19 +51738,19 @@ const province = {
           ]
         ]
       },
-      "id": 63,
-      "properties": {
-        "ID": 11,
-        "kode": 63,
-        "Propinsi": "KALIMANTAN SELATAN",
-        "SUMBER": "Batas Provinsi Desember 2019 Dukcapil (Skala tidak diketahui)"
+      id: 63,
+      properties: {
+        ID: 11,
+        kode: 63,
+        Propinsi: 'KALIMANTAN SELATAN',
+        SUMBER: 'Batas Provinsi Desember 2019 Dukcapil (Skala tidak diketahui)'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -58617,19 +58617,19 @@ const province = {
           ]
         ]
       },
-      "id": 64,
-      "properties": {
-        "ID": 21,
-        "kode": 64,
-        "Propinsi": "KALIMANTAN TIMUR",
-        "SUMBER": "Batas Provinsi Desember 2019 Dukcapil (Skala tidak diketahui)"
+      id: 64,
+      properties: {
+        ID: 21,
+        kode: 64,
+        Propinsi: 'KALIMANTAN TIMUR',
+        SUMBER: 'Batas Provinsi Desember 2019 Dukcapil (Skala tidak diketahui)'
       }
     },
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      type: 'Feature',
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates: [
           [
             [
               [
@@ -64296,12 +64296,12 @@ const province = {
           ]
         ]
       },
-      "id": 65,
-      "properties": {
-        "ID": 33,
-        "kode": 65,
-        "Propinsi": "KALIMANTAN UTARA",
-        "SUMBER": "Batas Provinsi Desember 2019 Dukcapil (Skala tidak diketahui)"
+      id: 65,
+      properties: {
+        ID: 33,
+        kode: 65,
+        Propinsi: 'KALIMANTAN UTARA',
+        SUMBER: 'Batas Provinsi Desember 2019 Dukcapil (Skala tidak diketahui)'
       }
     }
   ]
