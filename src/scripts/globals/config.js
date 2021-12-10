@@ -3,7 +3,7 @@ const CONFIG = {
   COVID_URL: '',
   ZONE_URL: '',
   HOSPITAL_URL: '',
-  VACCINE_URL: ''
+  VACCINE_URL: 'http://vaksincovid19-api.vercel.app/api/vaksin/'
 }
 
 export default CONFIG
