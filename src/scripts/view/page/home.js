@@ -1,58 +1,23 @@
+/* eslint-disable no-unused-expressions */
+import DataSource from '../../data/data-source'
+import { createVaksinTemplate } from '../component/templates/template-home'
+
 const Beranda = {
   async render () {
     return `
-      <div class="latest">
-        <h1 class="latest__label">Vaksinasi</h1>
-        <div class="posts">
-          <article class="post-item-vaksin">
-            <div class="post-item__content">
-              <p class="post-item__title">Total Sasaran</p>
-            </div>
-          </article>
-          <article class="post-item">
-            <div class="post-item__content">
-              <p class="post-item__title">Total Petugas Umum</p>
-            </div>
-          </article>
-          <article class="post-item">
-            <div class="post-item__content">
-              <p class="post-item__title">Total Lansia</p>
-            </div>
-          </article>
-          <article class="post-item">
-            <div class="post-item__content">
-              <p class="post-item__title">Total Dosis 1</p>
-            </div>
-          </article>
-          <article class="post-item">
-            <div class="post-item__content">
-              <p class="post-item__title">Total Dosis 2</p>
-            </div>
-          </article>
-        </div>
-        <h4 class="update">Terakhir Diperbarui :</h4>
+      <div class="vaksin" id="vaksin">
+        
       </div>
 
-      <div class="latest">
-        <h1 class="latest__label">Protokol kesehatan</h1>
-        <div class="posts">
-          <article class="post-item">
-            <div class="post-item__content">
-              <p class="post-item__title">5M</p>
-            </div>
-          </article>
-          <article class="post-item">
-            <div class="post-item__content">
-              <p class="post-item__title">Varian Covid</p>
-            </div>
-          </article>
-        </div>
+      <div class="protection" id="protection">
+        
       </div>
     `
   },
 
   async afterRender () {
-
+    const vaksinsasi = await DataSource.vaccine()
+    document.querySelector('#vaksin').innerHTML = createVaksinTemplate(vaksinsasi)
   }
 }
 

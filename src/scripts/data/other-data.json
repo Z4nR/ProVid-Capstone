@@ -99,7 +99,7 @@
             "symptoms" : "Batuk, demam, sesak napas, hilangnya indera perasa dan penciuman."
         }
     ],
-    "protection-rule" : [
+    "protection" : [
         {
             "name" : "Mencuci Tangan",
             "description" : "Rutin mencuci tangan hingga bersih menggunakan sabun dan air mengalir merupakan salah satu protokol kesehatan yang cukup efektif untuk mencegah penularan virus corona. Untuk hasil yang maksimal disarankan untuk mencuci tangan setidaknya selama 20 menit",
