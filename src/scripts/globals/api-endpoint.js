@@ -2,7 +2,7 @@ import CONFIG from './config'
 
 const API_ENDPOINT = {
   COVID_DATA: `${CONFIG.COVID_ID_URL}`,
-  COVID_PROV_DATA: (provName) => `${CONFIG.COVID_ID_URL}provinsi?name=${provName}`,
+  COVID_PROV_DATA: `${CONFIG.COVID_ID_URL}provinsi`,
   CITY_RISK: `${CONFIG.CITY_RISK_URL}city_risk/raw`,
   HOSPITAL_BY_PROV: `${CONFIG.HOSPITAL_URL}get-provinces`,
   HOSPITAL_CITY_IN_PROV: (province) => `${CONFIG.HOSPITAL_URL}get-cities?provinceid=${province}`,

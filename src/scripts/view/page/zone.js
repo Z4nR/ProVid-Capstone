@@ -1,5 +1,6 @@
 import L from 'leaflet'
-import province from '../../data/prov_id'
+import DataSource from '../../data/data-source'
+import province from '../../data/geojson/prov_id'
 import CONFIG from '../../globals/config'
 
 const Zona = {
@@ -16,15 +17,33 @@ const Zona = {
     const mapZoom = 5
     const map = L.map('map').setView(mapLocation, mapZoom)
 
-    const style = feature => {
-      return {
-        fillColor: 'gray',
-        weight: 2,
-        opacity: 1,
-        color: 'white',
-        dashArray: '3',
-        fillOpacity: 0.7
-      }
+    const covidData = await DataSource.covidProvince()
+
+    const getColor = c => {
+      return c > 1000
+        ? '#800026'
+        : c > 500
+          ? '#BD0026'
+          : c > 200
+            ? '#E31A1C'
+            : c > 100
+              ? '#FC4E2A'
+              : c > 50
+                ? '#FD8D3C'
+                : c > 20
+                  ? '#FEB24C'
+                  : c > 10
+                    ? '#FED976'
+                    : '#FFEDA0'
+    }
+
+    const style = {
+      fillColor: 'gray',
+      weight: 2,
+      opacity: 1,
+      color: 'white',
+      dashArray: '3',
+      fillOpacity: 0.7
     }
 
     const highlightFeature = e => {
