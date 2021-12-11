@@ -36568,7 +36568,7 @@ const province = {
       properties: {
         ID: 25,
         kode: 19,
-        Propinsi: 'BANGKA BELITUNG',
+        Propinsi: 'KEPULAUAN BANGKA BELITUNG',
         SUMBER: 'Peta Dasar BAKOSURTANAL Skala 1 : 250.000'
       }
     },

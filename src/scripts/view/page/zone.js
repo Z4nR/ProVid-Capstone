@@ -18,6 +18,17 @@ const Zona = {
     const map = L.map('map').setView(mapLocation, mapZoom)
 
     const covidData = await DataSource.covidProvince()
+    province.features = province.features.map(feature => {
+      const covidDataOnArea = covidData.find(data => data.provinsi === feature.properties.Propinsi)
+      const density = covidDataOnArea?.dirawat || 0
+      return {
+        ...feature,
+        properties: {
+          ...feature.properties,
+          density
+        }
+      }
+    })
 
     const getColor = c => {
       return c > 1000
@@ -37,14 +48,14 @@ const Zona = {
                     : '#FFEDA0'
     }
 
-    const style = {
-      fillColor: 'gray',
+    const style = feature => ({
+      fillColor: getColor(feature.properties.density),
       weight: 2,
       opacity: 1,
       color: 'white',
       dashArray: '3',
       fillOpacity: 0.7
-    }
+    })
 
     const highlightFeature = e => {
       const layer = e.target
@@ -65,15 +76,17 @@ const Zona = {
       geoJson.resetStyle(e.target)
     }
 
-    const zoomToFeature = e => {
-      map.fitBounds(e.target.getBounds())
+    const zoomToFeature = async (event, feature) => {
+      const a = await DataSource.getProvinceGeoJson()
+      L.geoJson(a.default, { style: style, onEachFeature: onEachFeature }).addTo(map)
+      map.fitBounds(event.target.getBounds())
     }
 
     const onEachFeature = (feature, layer) => {
       layer.on({
         mouseover: highlightFeature,
         mouseout: resetHighlight,
-        click: zoomToFeature
+        click: (event) => zoomToFeature(event, feature)
       })
     }
 
