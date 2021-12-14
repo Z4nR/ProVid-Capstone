@@ -3,9 +3,11 @@ import sumut from './provinces/sumut'
 
 const prov = [
   {
+    name: 'ACEH',
     geojson: aceh
   },
   {
+    name: 'SUMATERA UTARA',
     geojson: sumut
   }
 ]

@@ -18,6 +18,8 @@ const Zona = {
     const map = L.map('map').setView(mapLocation, mapZoom)
 
     const covidData = await DataSource.covidProvince()
+    const prov = DataSource.getProvinceGeoJson()
+
     province.features = province.features.map(feature => {
       const covidDataOnArea = covidData.find(data => data.provinsi === feature.properties.Propinsi)
       const density = covidDataOnArea?.dirawat || 0
@@ -76,9 +78,12 @@ const Zona = {
       geoJson.resetStyle(e.target)
     }
 
-    const zoomToFeature = async (event, feature) => {
-      const a = await DataSource.getProvinceGeoJson()
-      L.geoJson(a.default, { style: style, onEachFeature: onEachFeature }).addTo(map)
+    const zoomToFeature = (event, feature) => {
+      const selectedProv = prov.find(data => data.name === feature.properties.Propinsi)
+      const showCity = selectedProv.geojson
+      console.log(showCity)
+
+      L.geoJSON(showCity, { style: style, onEachFeature: onEachFeature }).addTo(map)
       map.fitBounds(event.target.getBounds())
     }
 
@@ -90,7 +95,7 @@ const Zona = {
       })
     }
 
-    const geoJson = L.geoJson(province, { style: style, onEachFeature: onEachFeature }).addTo(map)
+    const geoJson = L.geoJSON(province, { style: style, onEachFeature: onEachFeature }).addTo(map)
 
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=' + CONFIG.MapBox_Token, {
       id: 'mapbox/light-v9',
