@@ -40,4 +40,22 @@ const createVaksinTemplate = (vaksin) => `
 <h4 class="update">Terakhir Diperbarui : ${vaksin.lastUpdate}</h4>
 `
 
-export { createVaksinTemplate }
+const getDataProtection = (data) => `
+
+  <div class="post-item-contentProtect">
+    <img class="vaksinIcon" src="${data.image}" alt="${data.name}">
+    <p class="post-item-totalVaksin">${data.name}</p>
+    <p class="post-item-titleVaksin">${data.description}</p>
+  </div>
+
+`
+
+const getDataCovid = (data) => `
+  <div class="post-item-contentVarian">
+    <h3 class="post-item__titleSasaran">${data.name}</h3>
+    <p class="post-item__titleSasaran">${data.firstCountry} - ${data.knowDate}</p>
+    <p class="post-item__titleSasaran">${data.symptoms}</p>
+  </div>
+`
+
+export { createVaksinTemplate, getDataProtection, getDataCovid }

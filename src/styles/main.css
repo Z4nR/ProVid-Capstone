@@ -174,7 +174,6 @@ main {
 
 .post-item-totalVaksin {
     font-size: 15px;
-    text-transform: uppercase;
     color: #999;
     text-align: right;
 }
@@ -192,8 +191,72 @@ main {
 
 .vaksinIcon{
     width: 20%;
+    align-items: right;
 }
-  
+
+.component{
+    border-radius: 1em;
+    box-sizing: border-box;
+}
+/*
+ * Protect
+ */
+
+ .protection {
+    width: 100%;
+    text-align: center;
+}
+
+.protection__label {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.protection__label::after {
+    display: block;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.post-item-contentProtect {
+    padding: 32px;
+    border-radius: 30px;
+}
+
+/*
+ * virus
+ */
+
+ .virus {
+    text-align: left;
+}
+
+/*
+ * Varian
+ */
+
+ .varian {
+    width: 100%;
+    text-align: center;
+}
+
+.varian__label {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.varian_label::after {
+    display: block;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.post-item-contentvarian {
+    padding: 16px;
+    border-radius: 30px;
+}
 /*
   Footer
 */ 
