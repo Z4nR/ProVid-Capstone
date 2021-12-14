@@ -81,10 +81,12 @@ const Zona = {
     const zoomToFeature = (event, feature) => {
       const selectedProv = prov.find(data => data.name === feature.properties.Propinsi)
       const showCity = selectedProv.geojson
-      console.log(showCity)
-
       L.geoJSON(showCity, { style: style, onEachFeature: onEachFeature }).addTo(map)
-      map.fitBounds(event.target.getBounds())
+      if (!showCity) {
+        map.removeLayer(showCity)
+      } else {
+        map.fitBounds(event.target.getBounds())
+      }
     }
 
     const onEachFeature = (feature, layer) => {
