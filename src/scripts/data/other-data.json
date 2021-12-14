@@ -3,99 +3,99 @@
         {
             "name" : "SARS-Cov-19",
             "mutation" : "",
-            "first-country" : "China",
-            "know-date" : "Desember 2019",
+            "firstCountry" : "China",
+            "knowDate" : "Desember 2019",
             "symptoms" : " Demam, sakit tenggorokan, nyeri otot, batuk, diare, mual, hilangnya indera perasa dan penciuman."
         },
         {
             "name" : "Alfa",
             "mutation" : "B.1.1.7",
-            "first-country" : "Inggris",
-            "know-date" : "September 2020",
+            "firstCountry" : "Inggris",
+            "knowDate" : "September 2020",
             "symptoms" : "Demam, sesak napas, nyeri pada dada, batuk, keluhan pada saluran pencernaan, hilangnya indera perasa dan penciuman."
         },
         {
             "name" : "Beta",
             "mutation" : "B.1.351",
-            "first-country" : "Afrika",
-            "know-date" : "Oktober 2020",
+            "firstCountry" : "Afrika",
+            "knowDate" : "Oktober 2020",
             "symptoms" : "Demam, sesak napas, nyeri pada dada, batuk, keluhan pada saluran pencernaan, hilangnya indera perasa dan penciuman."
         },
         {
             "name" : "Delta",
             "mutation" : "B.1.617.2",
-            "first-country" : "India",
-            "know-date" : "Oktober 2020",
+            "firstCountry" : "India",
+            "knowDate" : "Oktober 2020",
             "symptoms" : "Demam, sesak napas, sakit tenggorokan, hilangnya indera perasa dan penciuman, sakit kepala, pilek, batuk, kelelahan."
         },
         {
             "name" : "Gamma",
             "mutation" : "P.1",
-            "first-country" : "Brazil",
-            "know-date" : "November 2020",
+            "firstCountry" : "Brazil",
+            "knowDate" : "November 2020",
             "symptoms" : "Demam, sesak napas, sakit kepala, sakit tenggorokan, batuk, pilek."
         },
         {
             "name" : "Epilson",
             "mutation" : "B.1420",
-            "first-country" : "Amerika Serikat",
-            "know-date" : "Juli 2020",
+            "firstCountry" : "Amerika Serikat",
+            "knowDate" : "Juli 2020",
             "symptoms" : "sesak napas, sakit kepala, sakit tenggorokan, batuk, pilek, demam."
         },
         {
             "name" : "Lambda",
             "mutation" : "C.37",
-            "first-country" : "Peru",
-            "know-date" : "Desember 2020",
+            "firstCountry" : "Peru",
+            "knowDate" : "Desember 2020",
             "symptoms" : "Demam, satuk, pilek, nyeri otot, sakit kepala, lemas, gangguan indera penciuman (anosmia)."
         },
         {
             "name" : "Zeta",
             "mutation" : "P.2",
-            "first-country" : "Brazil",
-            "know-date" : "2020",
+            "firstCountry" : "Brazil",
+            "knowDate" : "2020",
             "symptoms" : "Demam, sesak napas, sakit kepala, sakit tenggorokan, patuk, pilek."
         },
         {
             "name" : "Eta",
             "mutation" : "B.1.525",
-            "first-country" : "Nigeria, UK",
-            "know-date" : "Desember 2020",
+            "firstCountry" : "Nigeria, UK",
+            "knowDate" : "Desember 2020",
             "symptoms" : "Sesak napas, demam, batuk, pilek, perubahan indera penciuman dan perasa."
         },
         {
             "name" : "Theta",
             "mutation" : "P.3",
-            "first-country" : "Filipina",
-            "know-date" : "Desember 2021",
+            "firstCountry" : "Filipina",
+            "knowDate" : "Desember 2021",
             "symptoms" : "  Demam, batuk, pilek, nyeri otot, sakit kepala, lemas, gangguan indera penciuman (anosmia)."
         },
         {
             "name" : "Lota",
             "mutation" : "B.1.526",
-            "first-country" : "New York",
-            "know-date" : "November 2021",
+            "firstCountry" : "New York",
+            "knowDate" : "November 2021",
             "symptoms" : "Demam, batuk, pilek, nyeri otot, sakit kepala, lemas, gangguan indera penciuman (anosmia)."
         },
         {
             "name" : "Kappa",
             "mutation" : "B.1.617.1",
-            "first-country" : "India",
-            "know-date" : "Oktober 2020",
+            "firstCountry" : "India",
+            "knowDate" : "Oktober 2020",
             "symptoms" : "Sesak nafas, sakit perut, diare, demam tinggi, pilek, batuk, mata merah dan berair."
         },
         {
             "name" : "Umicorn",
             "mutation" : "B.1.1.529",
-            "first-country" : "Afrika Selatan",
-            "know-date" : "November 2021",
+            "firstCountry" : "Afrika Selatan",
+            "knowDate" : "November 2021",
             "symptoms" : "Hilangnya indera penciuman (anosmia), kelelahan, demam tinggi, detak jantung tinggi."
         },
         {
             "name" : "Mu",
             "mutation" : "B.1.621",
-            "first-country" : "Kolombia",
-            "know-date" : "Januari 2021",
+            "firstCountry" : "Kolombia",
+            "knowDate" : "Januari 2021",
             "symptoms" : "Batuk, demam, sesak napas, hilangnya indera perasa dan penciuman."
         }
     ],
