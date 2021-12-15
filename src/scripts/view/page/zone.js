@@ -19,7 +19,6 @@ const Zona = {
 
     const covidData = await DataSource.covidProvince()
     const prov = DataSource.getProvinceGeoJson()
-    const city = DataSource.getCityGeoJson()
 
     province.features = province.features.map(feature => {
       const covidDataOnArea = covidData.find(data => data.provinsi === feature.properties.Propinsi)
@@ -79,16 +78,16 @@ const Zona = {
       geoJson.resetStyle(e.target)
     }
 
+    let currentMap = null
     const zoomToFeature = (event, feature) => {
-      if (prov) {
+      if (feature.properties?.Kind !== 'City') {
+        currentMap?.remove()
         const selectedProv = prov.find(data => data.name === feature.properties.Propinsi)
         const showCity = selectedProv.geojson
-        L.geoJSON(showCity, { style: style, onEachFeature: onEachFeature }).addTo(map)
-        map.fitBounds(event.target.getBounds())
-      } else {
-        L.geoJSON(city, { style: style, onEachFeature: onEachFeature }).addTo(map)
-        map.fitBounds(event.target.getBounds())
+        currentMap = L.geoJSON(showCity, { style: style, onEachFeature: onEachFeature })
+        currentMap.addTo(map)
       }
+      map.fitBounds(event.target.getBounds())
     }
 
     const onEachFeature = (feature, layer) => {

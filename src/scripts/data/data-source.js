@@ -6,11 +6,6 @@ class DataSource {
     return prov
   }
 
-  static getCityGeoJson () {
-    const { geojson } = prov.geojson
-    return geojson
-  }
-
   static async vaccine () {
     const response = await fetch(API_ENDPOINT.VACCINE)
     return response.json()
