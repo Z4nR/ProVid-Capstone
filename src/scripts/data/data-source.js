@@ -3,8 +3,12 @@ import prov from './geojson/prov_api'
 
 class DataSource {
   static getProvinceGeoJson () {
-    console.log(prov)
     return prov
+  }
+
+  static getCityGeoJson () {
+    const { geojson } = prov.geojson
+    return geojson
   }
 
   static async vaccine () {
