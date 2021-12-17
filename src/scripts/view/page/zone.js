@@ -17,11 +17,23 @@ const Zona = {
     const mapZoom = 5
     const map = L.map('map').setView(mapLocation, mapZoom)
 
-    const covidData = await DataSource.covidProvince()
-    const prov = DataSource.getProvinceGeoJson()
+    const info = L.control()
+    info.onAdd = function (map) {
+      this._div = L.DomUtil.create('div', 'info')
+      this.update()
+      return this._div
+    }
+    info.update = function (props) {
+      this._div.innerHTML = '<h4>Indonesian Covid Medical Density</h4>' + (props
+        ? '<b>' + props.Propinsi + '</b><br />' + props.density + ' orang dirawat '
+        : 'Hover over a state')
+    }
+    info.addTo(map)
 
+    const covidData = await DataSource.covidProvince()
     province.features = province.features.map(feature => {
       const covidDataOnArea = covidData.find(data => data.provinsi === feature.properties.Propinsi)
+      console.log(covidDataOnArea)
       const density = covidDataOnArea?.dirawat || 0
       return {
         ...feature,
@@ -50,6 +62,20 @@ const Zona = {
                     : '#FFEDA0'
     }
 
+    const legend = L.control({ position: 'bottomright' })
+    legend.onAdd = function (map) {
+      const div = L.DomUtil.create('div', 'info legend')
+      const grades = [0, 10, 20, 50, 100, 200, 500, 1000]
+      for (let i = 0; i < grades.length; i++) {
+        div.innerHTML +=
+          '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+          grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+')
+      }
+
+      return div
+    }
+    legend.addTo(map)
+
     const style = feature => ({
       fillColor: getColor(feature.properties.density),
       weight: 2,
@@ -72,21 +98,16 @@ const Zona = {
       if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
         layer.bringToFront()
       }
+
+      info.update(layer.feature.properties)
     }
 
     const resetHighlight = e => {
       geoJson.resetStyle(e.target)
+      info.update()
     }
 
-    let currentMap = null
     const zoomToFeature = (event, feature) => {
-      if (feature.properties?.Kind !== 'City') {
-        currentMap?.remove()
-        const selectedProv = prov.find(data => data.name === feature.properties.Propinsi)
-        const showCity = selectedProv.geojson
-        currentMap = L.geoJSON(showCity, { style: style, onEachFeature: onEachFeature })
-        currentMap.addTo(map)
-      }
       map.fitBounds(event.target.getBounds())
     }
 

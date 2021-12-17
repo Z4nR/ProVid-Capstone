@@ -1,11 +1,6 @@
 import API_ENDPOINT from '../globals/api-endpoint'
-import prov from './geojson/prov_api'
 
 class DataSource {
-  static getProvinceGeoJson () {
-    return prov
-  }
-
   static async vaccine () {
     const response = await fetch(API_ENDPOINT.VACCINE)
     return response.json()
