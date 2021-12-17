@@ -2,6 +2,7 @@ import L from 'leaflet'
 import DataSource from '../../data/data-source'
 import province from '../../data/geojson/prov_id'
 import CONFIG from '../../globals/config'
+import '../component/city/city-item'
 
 const Zona = {
   async render () {
@@ -13,12 +14,12 @@ const Zona = {
   },
 
   async afterRender () {
-    const mapLocation = [0.789, 119.9213]
-    const mapZoom = 5
+    const mapLocation = [-0.45406017, 101.51926]
+    const mapZoom = 6
     const map = L.map('map').setView(mapLocation, mapZoom)
 
     const info = L.control()
-    info.onAdd = function (map) {
+    info.onAdd = function () {
       this._div = L.DomUtil.create('div', 'info')
       this.update()
       return this._div
@@ -32,8 +33,7 @@ const Zona = {
 
     const covidData = await DataSource.covidProvince()
     province.features = province.features.map(feature => {
-      const covidDataOnArea = covidData.find(data => data.provinsi === feature.properties.Propinsi)
-      console.log(covidDataOnArea)
+      const covidDataOnArea = covidData.find(data => data.provinsi === feature.properties.Name)
       const density = covidDataOnArea?.dirawat || 0
       return {
         ...feature,
@@ -63,7 +63,7 @@ const Zona = {
     }
 
     const legend = L.control({ position: 'bottomright' })
-    legend.onAdd = function (map) {
+    legend.onAdd = function () {
       const div = L.DomUtil.create('div', 'info legend')
       const grades = [0, 10, 20, 50, 100, 200, 500, 1000]
       for (let i = 0; i < grades.length; i++) {
@@ -71,7 +71,6 @@ const Zona = {
           '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
           grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+')
       }
-
       return div
     }
     legend.addTo(map)
@@ -107,7 +106,16 @@ const Zona = {
       info.update()
     }
 
+    const prov = DataSource.getProvinceGeoJson()
+    let currentMap = null
     const zoomToFeature = (event, feature) => {
+      if (feature.properties?.Kind !== 'City') {
+        currentMap?.remove()
+        const selectedProv = prov.find(data => data.name === feature.properties.Name)
+        const showCity = selectedProv.geojson
+        currentMap = L.geoJSON(showCity, { style: style, onEachFeature: onEachFeature })
+        currentMap.addTo(map)
+      }
       map.fitBounds(event.target.getBounds())
     }
 
