@@ -61819,7 +61819,7 @@ const sumsel = {
       properties: {
         Kind: 'City',
         Code: 1607,
-        Name: 'BANYU ASIN',
+        Name: 'BANYUASIN',
         Year: 2015,
         Source: 'BPS',
         Parent: 16,
@@ -117932,7 +117932,7 @@ const sumsel = {
       properties: {
         Kind: 'City',
         Code: 1671,
-        Name: 'PALEMBANG',
+        Name: 'KOTA PALEMBANG',
         Year: 2015,
         Source: 'BPS',
         Parent: 16,
@@ -121153,7 +121153,7 @@ const sumsel = {
       properties: {
         Kind: 'City',
         Code: 1672,
-        Name: 'PRABUMULIH',
+        Name: 'KOTA PRABUMULIH',
         Year: 2015,
         Source: 'BPS',
         Parent: 16,
@@ -123970,7 +123970,7 @@ const sumsel = {
       properties: {
         Kind: 'City',
         Code: 1673,
-        Name: 'PAGAR ALAM',
+        Name: 'KOTA PAGAR ALAM',
         Year: 2015,
         Source: 'BPS',
         Parent: 16,
@@ -129675,7 +129675,7 @@ const sumsel = {
       properties: {
         Kind: 'City',
         Code: 1674,
-        Name: 'LUBUKLINGGAU',
+        Name: 'KOTA LUBUKLINGGAU',
         Year: 2015,
         Source: 'BPS',
         Parent: 16,

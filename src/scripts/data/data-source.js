@@ -11,15 +11,20 @@ class DataSource {
     return response.json()
   }
 
+  static async covidNational () {
+    const response = await fetch(API_ENDPOINT.COVID_DATA)
+    const { lastUpdate } = await response.json()
+    return lastUpdate
+  }
+
   static async covidProvince () {
     const response = await fetch(API_ENDPOINT.COVID_PROV_DATA)
     return response.json()
   }
 
   static async cityRisk () {
-    const response = await fetch(API_ENDPOINT.CITY_RISK)
-    const { data } = await response.json()
-    return data
+    const response = await fetch(API_ENDPOINT.CITY_RISK).then(response => response.json())
+    return response
   }
 }
 

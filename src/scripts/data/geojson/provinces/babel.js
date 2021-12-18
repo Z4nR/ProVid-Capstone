@@ -148827,7 +148827,7 @@ const babel = {
       properties: {
         Kind: 'City',
         Code: 1971,
-        Name: 'PANGKAL PINANG',
+        Name: 'KOTA PANGKALPINANG',
         Year: 2015,
         Source: 'BPS',
         Parent: 19,

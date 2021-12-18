@@ -42464,7 +42464,7 @@ const jambi = {
       properties: {
         Kind: 'City',
         Code: 1504,
-        Name: 'BATANG HARI',
+        Name: 'BATANGHARI',
         Year: 2015,
         Source: 'BPS',
         Parent: 15,
@@ -81650,7 +81650,7 @@ const jambi = {
       properties: {
         Kind: 'City',
         Code: 1571,
-        Name: 'JAMBI',
+        Name: 'KOTA JAMBI',
         Year: 2015,
         Source: 'BPS',
         Parent: 15,
@@ -84903,7 +84903,7 @@ const jambi = {
       properties: {
         Kind: 'City',
         Code: 1572,
-        Name: 'SUNGAI PENUH',
+        Name: 'KOTA SUNGAI PENUH',
         Year: 2015,
         Source: 'BPS',
         Parent: 15,

@@ -18,28 +18,18 @@ const Zona = {
     const mapZoom = 6
     const map = L.map('map').setView(mapLocation, mapZoom)
 
-    const info = L.control()
-    info.onAdd = function () {
-      this._div = L.DomUtil.create('div', 'info')
-      this.update()
-      return this._div
-    }
-    info.update = function (props) {
-      this._div.innerHTML = '<h4>Indonesian Covid Medical Density</h4>' + (props
-        ? '<b>' + props.Propinsi + '</b><br />' + props.density + ' orang dirawat '
-        : 'Hover over a state')
-    }
-    info.addTo(map)
-
-    const covidData = await DataSource.covidProvince()
+    const covidDataNas = await DataSource.covidNational()
+    const covidDataProv = await DataSource.covidProvince()
     province.features = province.features.map(feature => {
-      const covidDataOnArea = covidData.find(data => data.provinsi === feature.properties.Name)
+      const covidDataOnArea = covidDataProv.find(data => data.provinsi === feature.properties.Name)
       const density = covidDataOnArea?.dirawat || 0
+      const date = covidDataNas
       return {
         ...feature,
         properties: {
           ...feature.properties,
-          density
+          density,
+          date
         }
       }
     })
@@ -62,10 +52,38 @@ const Zona = {
                     : '#FFEDA0'
     }
 
+    const getCityLevel = c => {
+      return c >= 'RESIKO TINGGI'
+        ? '#FF0000'
+        : c >= 'RESIKO SEDANG'
+          ? '#FFA500'
+          : c >= 'RESIKO RENDAH'
+            ? '#DED716'
+            : c >= 'TIDAK ADA KASUS'
+              ? '#9FE758'
+              : c >= 'TIDAK TERDAMPAK'
+                ? '#008000'
+                : '#FFFFFF'
+    }
+
+    const info = L.control()
+    info.onAdd = function () {
+      this._div = L.DomUtil.create('div', 'info')
+      this.update()
+      return this._div
+    }
+    info.update = function (props) {
+      this._div.innerHTML = '<h4>Status Pandemi Covid di Indonesia</h4>' + (props
+        ? '<b>' + props.Name + '</b><br />' + props.density + '</b><br />' + ' Update Terakhir : ' + props.date
+        : 'Pilih satu wilayah')
+    }
+    info.addTo(map)
+
     const legend = L.control({ position: 'bottomright' })
     legend.onAdd = function () {
       const div = L.DomUtil.create('div', 'info legend')
       const grades = [0, 10, 20, 50, 100, 200, 500, 1000]
+      div.innerHTML += '<p>Jumlah Pasien Dirawat'
       for (let i = 0; i < grades.length; i++) {
         div.innerHTML +=
           '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
@@ -76,12 +94,12 @@ const Zona = {
     legend.addTo(map)
 
     const style = feature => ({
-      fillColor: getColor(feature.properties.density),
+      fillColor: feature.properties?.Kind === 'City' ? getCityLevel(feature.properties.density) : getColor(feature.properties.density),
       weight: 2,
       opacity: 1,
       color: 'white',
       dashArray: '3',
-      fillOpacity: 0.7
+      fillOpacity: 1
     })
 
     const highlightFeature = e => {
@@ -108,11 +126,27 @@ const Zona = {
 
     const prov = DataSource.getProvinceGeoJson()
     let currentMap = null
-    const zoomToFeature = (event, feature) => {
+    const zoomToFeature = async (event, feature) => {
       if (feature.properties?.Kind !== 'City') {
         currentMap?.remove()
         const selectedProv = prov.find(data => data.name === feature.properties.Name)
+
+        const cityRisk = await DataSource.cityRisk()
         const showCity = selectedProv.geojson
+        showCity.features = showCity.features.map(feature => {
+          const covidLevelOnArea = cityRisk.data.find(data => data.kota === feature.properties.Name)
+          const density = covidLevelOnArea?.hasil || 'TIDAK ADA DATA'
+          const date = cityRisk.tanggal
+          return {
+            ...feature,
+            properties: {
+              ...feature.properties,
+              density,
+              date
+            }
+          }
+        })
+
         currentMap = L.geoJSON(showCity, { style: style, onEachFeature: onEachFeature })
         currentMap.addTo(map)
       }

@@ -338,5 +338,47 @@
                 }
             ]
         }
+    ],
+    "provinces": [
+        {
+            "id": "11prop",
+            "name": "Aceh"
+        },
+        {
+            "id": "12prop",
+            "name": "Sumatera Utara"
+        },
+        {
+            "id": "13prop",
+            "name": "Sumatera Barat"
+        },
+        {
+            "id": "14prop",
+            "name": "Riau"
+        },
+        {
+            "id": "15prop",
+            "name": "Jambi"
+        },
+        {
+            "id": "16prop",
+            "name": "Sumatera Selatan"
+        },
+        {
+            "id": "17prop",
+            "name": "Bengkulu"
+        },
+        {
+            "id": "18prop",
+            "name": "Lampung"
+        },
+        {
+            "id": "19prop",
+            "name": "Kepulauan Bangka Belitung"
+        },
+        {
+            "id": "20prop",
+            "name": "Kepulauan Riau"
+        }
     ]
 }

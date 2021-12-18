@@ -59506,7 +59506,7 @@ const bengkulu = {
       properties: {
         Kind: 'City',
         Code: 1771,
-        Name: 'BENGKULU',
+        Name: 'KOTA BENGKULU',
         Year: 2015,
         Source: 'BPS',
         Parent: 17,
