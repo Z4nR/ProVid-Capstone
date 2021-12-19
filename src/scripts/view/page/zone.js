@@ -2,7 +2,6 @@ import L from 'leaflet'
 import DataSource from '../../data/data-source'
 import province from '../../data/geojson/prov_id'
 import CONFIG from '../../globals/config'
-import '../component/city/city-item'
 
 const Zona = {
   async render () {
@@ -53,16 +52,16 @@ const Zona = {
     }
 
     const getCityLevel = c => {
-      return c >= 'RESIKO TINGGI'
-        ? '#FF0000'
-        : c >= 'RESIKO SEDANG'
-          ? '#FFA500'
+      return c >= 'TIDAK TERDAMPAK'
+        ? '#008000'
+        : c >= 'TIDAK ADA KASUS'
+          ? '#9FE758'
           : c >= 'RESIKO RENDAH'
             ? '#DED716'
-            : c >= 'TIDAK ADA KASUS'
-              ? '#9FE758'
-              : c >= 'TIDAK TERDAMPAK'
-                ? '#008000'
+            : c >= 'RESIKO SEDANG'
+              ? '#FFA500'
+              : c >= 'RESIKO TINGGI'
+                ? '#FF0000'
                 : '#FFFFFF'
     }
 
@@ -79,11 +78,11 @@ const Zona = {
     }
     info.addTo(map)
 
-    const legend = L.control({ position: 'bottomright' })
-    legend.onAdd = function () {
-      const div = L.DomUtil.create('div', 'info legend')
+    const provIndicator = L.control()
+    provIndicator.onAdd = function () {
+      const div = L.DomUtil.create('div', 'info indicator')
       const grades = [0, 10, 20, 50, 100, 200, 500, 1000]
-      div.innerHTML += '<p>Jumlah Pasien Dirawat'
+      div.innerHTML += '<p>Jumlah Pasien Dirawat</p>'
       for (let i = 0; i < grades.length; i++) {
         div.innerHTML +=
           '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
@@ -91,10 +90,23 @@ const Zona = {
       }
       return div
     }
-    legend.addTo(map)
+    provIndicator.addTo(map)
+
+    const cityIndicator = L.control()
+    cityIndicator.onAdd = function () {
+      const div = L.DomUtil.create('div', 'info indicator')
+      const grades = ['RESIKO TINGGI', 'RESIKO SEDANG', 'RESIKO RENDAH', 'TIDAK ADA KASUS', 'TIDAK TERDAMPAK']
+      div.innerHTML += '<p>Level Resiko Kota</p>'
+      for (let i = 0; i < grades.length; i++) {
+        div.innerHTML +=
+          '<i style="background:' + getCityLevel(grades[i]) + '"></i> ' + grades[i] + '<br>'
+      }
+      return div
+    }
+    cityIndicator.addTo(map)
 
     const style = feature => ({
-      fillColor: feature.properties?.Kind === 'City' ? getCityLevel(feature.properties.density) : getColor(feature.properties.density),
+      fillColor: feature.properties?.Kind === 'Province' ? getColor(feature.properties.density) : getCityLevel(feature.properties.density),
       weight: 2,
       opacity: 1,
       color: 'white',
@@ -109,7 +121,7 @@ const Zona = {
         weight: 5,
         color: '#666',
         dashArray: '',
-        fillOpacity: 0.7
+        fillOpacity: 1
       })
 
       if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
@@ -154,6 +166,10 @@ const Zona = {
     }
 
     const onEachFeature = (feature, layer) => {
+      if (feature.properties?.Kind === 'City') {
+        layer.bindPopup(feature.properties.Name)
+      }
+
       layer.on({
         mouseover: highlightFeature,
         mouseout: resetHighlight,
