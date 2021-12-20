@@ -150,13 +150,18 @@ const Zona = {
         showCity.features = showCity.features.map(feature => {
           const covidLevelOnArea = cityRisk.data.find(data => data.kota === feature.properties.Name)
           const density = covidLevelOnArea?.hasil || 'TIDAK ADA DATA'
+          const risk = data.city.find(data => data.density === density)
+          console.log(risk)
+          const can = risk?.can || 'TIDAK ADA DATA'
+          console.log(can)
           const date = cityRisk.tanggal
           return {
             ...feature,
             properties: {
               ...feature.properties,
               density,
-              date
+              date,
+              can
             }
           }
         })
@@ -167,19 +172,17 @@ const Zona = {
       map.fitBounds(event.target.getBounds())
     }
 
-    const cityData = document.createElement('div')
-    data.city.forEach((data) => {
-      const cityDetail = document.createElement('city-risk')
-      cityDetail.risk = data
-      cityData.appendChild(cityDetail)
-    })
-
+    let _can = ''
     const onEachFeature = (feature, layer) => {
       if (feature.properties?.Kind === 'City') {
+        const desc = feature.properties.can
+        desc.forEach((can) => _can += `<li>${can.description}</li>`)
+
         layer.bindPopup('<h1>' + feature.properties.Name + '</h1>' +
           '<h4>' + 'Tingkat Resiko Penyebaran Virus : ' + '<br>' +
           feature.properties.density + '</h4>' +
-          cityData.outerHTML)
+          '<h4> Hal yang dapat dilakukan </h4>' +
+          '<ul>' + _can + '</ul>')
       }
 
       layer.on({
