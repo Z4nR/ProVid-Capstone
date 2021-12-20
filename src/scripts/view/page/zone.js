@@ -7,9 +7,10 @@ import data from '../../data/other-data.json'
 const Zona = {
   async render () {
     return `
-      <section class="map-box">
-        <div id="map"></div>
-      <section>
+    <section class="map-box">
+      <div id="map">
+      </div>
+    <section>
     `
   },
 

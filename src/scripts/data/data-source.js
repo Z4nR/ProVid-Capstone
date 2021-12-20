@@ -26,6 +26,20 @@ class DataSource {
     const response = await fetch(API_ENDPOINT.CITY_RISK).then(response => response.json())
     return response
   }
+
+  static searchHospital (keyword) {
+    return fetch(API_ENDPOINT.SEARCH_HOSPITAL = keyword)
+      .then(response => {
+        return response.json()
+      })
+      .then(responseJson => {
+        if (responseJson.teams) {
+          return Promise.resolve(responseJson.teams)
+        } else {
+          return Promise.reject(`${keyword} is not found`)
+        }
+      })
+  }
 }
 
 export default DataSource

@@ -107,6 +107,14 @@ main {
 }
 
 /*
+ * post
+ */
+
+ .posts {
+    text-align: left;
+}
+
+/*
  * vaksin
  */
 
@@ -127,34 +135,6 @@ main {
     border-bottom: 1px solid #eeeeee;
 }
 
-.update {
-    margin-top: 10px;
-    font-weight: lighter;
-    text-align: right;
-}
-
-/*
- * post
- */
-
-.posts {
-    text-align: left;
-}
-
-/*
- * post item
- */
-
-.post-item-vaksin {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.post-item-contentVaksin {
-    padding: 32px;
-}
-
 .post-item-sasaran {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -165,39 +145,75 @@ main {
     grid-row-end: 3; /* kemudian berakhir di baris garis ketiga */
 }
 
-.post-item__titleSasaran {
-    font-size: 15px;
-    text-transform: uppercase;
-    color: #999;
-    text-align: center;
-}
-
-.post-item-totalVaksin {
-    font-size: 15px;
-    color: #999;
-    text-align: right;
-}
-
-.post-item-titleVaksin {
-    font-size: 15px;
-    text-transform: uppercase;
-    color: #999;
-    text-align: right;
+.post-item-contentSasaran {
+    padding: 32px;
 }
 
 .map{
     width: 100%;
 }
 
-.vaksinIcon{
-    width: 20%;
-    align-items: right;
+.post-item__totalSasaran {
+    font-weight: 500;
+    color: rgb(122, 120, 120);
+    text-align: center;
+    padding-bottom: 10px;
 }
 
-.component{
-    border-radius: 1em;
-    box-sizing: border-box;
+.post-item__titleSasaran {
+    color: rgb(122, 120, 120);
+    text-align: center;
 }
+
+.post-item-vaksin {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.post-item-contentVaksin {
+    padding: 16px;
+    height: 100px;;
+    display: flex;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.vaksinImage{
+    width: 18%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.vaksinInfo {
+    padding-left: 70px;
+    padding-top: 5px;
+    text-align: center;
+}
+  
+.vaksinInfo > h2 {
+    font-weight: 500;
+    color: rgb(122, 120, 120);
+}
+  
+.vaksinInfo > p {
+    margin-top: 10px;
+    color: rgb(122, 120, 120);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+}
+
+.update {
+    margin-top: 10px;
+    font-weight: lighter;
+    text-align: right;
+    margin-bottom: 60px;
+}
+
 /*
  * Protect
  */
@@ -205,6 +221,7 @@ main {
  .protection {
     width: 100%;
     text-align: center;
+    padding: 10px
 }
 
 .protection__label {
@@ -221,15 +238,41 @@ main {
 
 .post-item-contentProtect {
     padding: 32px;
-    border-radius: 30px;
+    height: auto;
+    display: flex;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1px;
 }
 
-/*
- * virus
- */
+.protectIcon{
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    object-fit: cover;
+    object-position: center;
+}
 
- .virus {
-    text-align: left;
+.protectionInfo {
+    padding: 16px;
+}
+  
+.protectionInfo> h2 {
+    font-weight: lighter;
+    color: rgb(122, 120, 120);
+}
+  
+.protectionInfo > p {
+    margin-top: 10px;
+    color: rgb(122, 120, 120);
+    font-size: small;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
 }
 
 /*
@@ -239,6 +282,8 @@ main {
  .varian {
     width: 100%;
     text-align: center;
+    border-left: 1.5px solid rgb(85, 82, 82);
+    padding: 10px
 }
 
 .varian__label {
@@ -254,9 +299,37 @@ main {
 }
 
 .post-item-contentvarian {
-    padding: 16px;
+    padding: 32px;
     border-radius: 30px;
 }
+
+.post-item-nameVarian {
+    color: rgb(61, 60, 60);
+    font-weight: 800;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.post-item-countryVarian, .post-item-symptomsVarian {
+    font-size: small;
+    color: rgb(122, 120, 120);
+    text-align: left;
+}
+
+
+/*
+ * virus
+ */
+
+.virus {
+    text-align: left;
+    border : 1.5px solid rgb(85, 82, 82);
+    padding: 10px
+}
+.post-item-virus {
+    overflow: hidden;
+}
+
 /*
   Footer
 */ 
@@ -329,4 +402,33 @@ footer p {
     float: left;
     margin-right: 8px;
     opacity: 0.7;
+}
+/*
+  Search Hospital
+*/
+.form {
+    width:500px;
+    margin:50px auto;
+    margin-bottom: 20px;
+}
+.search {
+    padding:8px 15px; 
+    background: #f0f8ff; 
+    border:2px solid #a7acac;
+}
+.button {
+    position:relative;
+    left:-4px; 
+    padding:10px 15px; 
+    border:0px solid #a7acac;
+    background-color: #a7acac; 
+    color:#fafafa;
+    font-weight:bold;
+}
+.button:hover {
+    background: #68a8a8;          
+    color:#fafafa;
+}
+.button:active {
+    background:#a7acac;
 }
