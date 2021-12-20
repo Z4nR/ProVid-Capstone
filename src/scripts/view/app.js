@@ -1,4 +1,7 @@
 import './component/appbar/appbar'
+import './component/templates/vaksin-data'
+import './component/templates/prokes-data'
+import './component/templates/varian-data'
 import routes from '../routes/routes'
 import UrlParser from '../routes/url-parser'
 import NavDrawerInit from '../utils/navigation-drawer-initiator'

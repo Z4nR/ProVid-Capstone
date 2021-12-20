@@ -1,14 +1,12 @@
-/* eslint-disable no-unused-expressions */
 import DataSource from '../../data/data-source'
-import { createVaksinTemplate, getDataProtection, getDataCovid } from '../component/templates/template-home'
-// json
 import data from '../../data/other-data.json'
 
 const Beranda = {
   async render () {
     return `
-      <div class="vaksin" id="vaksin"></div>
-      
+      <div class="vaksin" id="vaksin">
+        <vaksin-data></vaksin-data>
+      </div>
       <div class="virus">
         <article class="post-item-virus">
           <div class="protection" id="protection">
@@ -27,18 +25,22 @@ const Beranda = {
   async afterRender () {
     // get data vaksinasi
     const vaksinsasi = await DataSource.vaccine()
-    document.querySelector('#vaksin').innerHTML = createVaksinTemplate(vaksinsasi)
+    document.querySelector('vaksin-data').vaksin = vaksinsasi
 
     // get data Protection
     const prokesContainer = document.querySelector('#protection')
-    data.protection.forEach((data, i) => {
-      prokesContainer.innerHTML += getDataProtection(data)
+    data.protection.forEach((data) => {
+      const prokesBox = document.createElement('prokes-data')
+      prokesBox.content = data
+      prokesContainer.appendChild(prokesBox)
     })
 
     // get data varian virus
     const covidContainer = document.querySelector('#varian')
-    data.varian.forEach((data, i) => {
-      covidContainer.innerHTML += getDataCovid(data)
+    data.varian.forEach((data) => {
+      const varianBox = document.createElement('varian-data')
+      varianBox.content = data
+      covidContainer.appendChild(varianBox)
     })
   }
 }
