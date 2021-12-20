@@ -12,7 +12,7 @@ class cityRisk extends HTMLElement {
     this.innerHTML = `
             <div class="rule">
                 <div class="cans">
-                    <h6>Hal yang dapat dilakukan</h6>
+                    <h4>Hal yang dapat dilakukan</h4>
                     <ul class="list">${_cans}</ul>
                 </div>
             </div>`
