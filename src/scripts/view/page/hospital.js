@@ -1,11 +1,17 @@
 import L from 'leaflet'
+import '../../data/data-source'
 
 const RumahSakit = {
   async render () {
     return `
-      <section class="map-box">
-        <div id="map"></div>
-      <section>
+    <section class="map-box">
+      <form>               
+        <input class="search" type="search" placeholder="Search...">               
+        <input class="button" type="submit" value="Search">       
+      </form>
+      <div id="map" class"mapHospital">
+      </div>
+    <section>
     `
   },
 

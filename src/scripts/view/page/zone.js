@@ -7,9 +7,10 @@ import '../component/city/city-item'
 const Zona = {
   async render () {
     return `
-      <section class="map-box">
-        <div id="map"></div>
-      <section>
+    <section class="map-box">
+      <div id="map">
+      </div>
+    <section>
     `
   },
 
