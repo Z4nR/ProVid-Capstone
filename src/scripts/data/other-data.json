@@ -126,9 +126,10 @@
             "image" : "../image/mobilitas.svg"
         }
     ],
-    "city-rule" : [
+    "city" : [
         {
-            "risk-level" : "PPKM Level 1",
+            "density" : "TIDAK ADA KASUS",
+            "risklevel" : "PPKM Level 1",
             "can" : [
                 {
                     "rule": "Kegiatan Belajar Mengajar",
@@ -200,7 +201,8 @@
             ]
         },
         {
-            "risk-level" : "PPKM Level 2",
+            "density": "RESIKO RENDAH",
+            "risklevel" : "PPKM Level 2",
             "can" : [
                 {
                     "rule": "Kegiatan Belajar Mengajar",
@@ -272,7 +274,8 @@
             ]
         },
         {
-            "risk-level" : "PPKM Level 3",
+            "density": "RESIKO SEDANG",
+            "risklevel" : "PPKM Level 3",
             "can" : [
                 {
                     "rule": "Kegiatan Belajar Mengajar",

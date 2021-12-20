@@ -167,13 +167,19 @@ const Zona = {
       map.fitBounds(event.target.getBounds())
     }
 
-    const cityData = '<div class="city-data">' + '</div>'
+    const cityData = document.createElement('div')
+    data.city.forEach((data) => {
+      const cityDetail = document.createElement('city-risk')
+      cityDetail.risk = data
+      cityData.appendChild(cityDetail)
+    })
 
     const onEachFeature = (feature, layer) => {
       if (feature.properties?.Kind === 'City') {
         layer.bindPopup('<h1>' + feature.properties.Name + '</h1>' +
-          '<h4>' + 'Tingkat Resiko Penyebaran Virus : ' + '<br>' + feature.properties.density + '</h4>' +
-          cityData)
+          '<h4>' + 'Tingkat Resiko Penyebaran Virus : ' + '<br>' +
+          feature.properties.density + '</h4>' +
+          cityData.outerHTML)
       }
 
       layer.on({
