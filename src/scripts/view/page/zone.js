@@ -2,6 +2,7 @@ import L from 'leaflet'
 import DataSource from '../../data/data-source'
 import province from '../../data/geojson/prov_id'
 import CONFIG from '../../globals/config'
+import data from '../../data/other-data.json'
 
 const Zona = {
   async render () {
@@ -52,15 +53,15 @@ const Zona = {
     }
 
     const getCityLevel = c => {
-      return c >= 'TIDAK TERDAMPAK'
+      return c === 'TIDAK TERDAMPAK'
         ? '#008000'
-        : c >= 'TIDAK ADA KASUS'
+        : c === 'TIDAK ADA KASUS'
           ? '#9FE758'
-          : c >= 'RESIKO RENDAH'
+          : c === 'RESIKO RENDAH'
             ? '#DED716'
-            : c >= 'RESIKO SEDANG'
+            : c === 'RESIKO SEDANG'
               ? '#FFA500'
-              : c >= 'RESIKO TINGGI'
+              : c === 'RESIKO TINGGI'
                 ? '#FF0000'
                 : '#FFFFFF'
     }
@@ -78,7 +79,7 @@ const Zona = {
     }
     info.addTo(map)
 
-    const provIndicator = L.control()
+    const provIndicator = L.control({ position: 'bottomright' })
     provIndicator.onAdd = function () {
       const div = L.DomUtil.create('div', 'info indicator')
       const grades = [0, 10, 20, 50, 100, 200, 500, 1000]
@@ -92,7 +93,7 @@ const Zona = {
     }
     provIndicator.addTo(map)
 
-    const cityIndicator = L.control()
+    const cityIndicator = L.control({ position: 'bottomright' })
     cityIndicator.onAdd = function () {
       const div = L.DomUtil.create('div', 'info indicator')
       const grades = ['RESIKO TINGGI', 'RESIKO SEDANG', 'RESIKO RENDAH', 'TIDAK ADA KASUS', 'TIDAK TERDAMPAK']
@@ -165,9 +166,13 @@ const Zona = {
       map.fitBounds(event.target.getBounds())
     }
 
+    const cityData = '<div class="city-data">' + '</div>'
+
     const onEachFeature = (feature, layer) => {
       if (feature.properties?.Kind === 'City') {
-        layer.bindPopup(feature.properties.Name)
+        layer.bindPopup('<h1>' + feature.properties.Name + '</h1>' +
+          '<h4>' + 'Tingkat Resiko Penyebaran Virus : ' + '<br>' + feature.properties.density + '</h4>' +
+          cityData)
       }
 
       layer.on({
