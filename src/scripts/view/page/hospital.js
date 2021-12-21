@@ -1,34 +1,25 @@
-import L from 'leaflet'
-import '../../data/data-source'
-
 const RumahSakit = {
   async render () {
     return `
-    <section class="map-box">
-      <form>               
-        <input class="search" type="search" placeholder="Search...">               
-        <input class="button" type="submit" value="Search">       
+      <form name="form1" action="proses.php" method="get"> 
+        <select name="Provinsi" class="provinsi" id="provinsi">
+          <option id="optionProvinsi"></option>
+        </select>      
       </form>
-      <div id="map" class"mapHospital">
-      </div>
-    <section>
     `
   },
 
   async afterRender () {
-    const mapLocation = [0.789, 119.9213]
-    const mapZoom = 5
-    const map = L.map('map').setView(mapLocation, mapZoom)
+    const provinsiContainer = document.querySelector('#optionProvinsi')
+    const items = require('../../data/other-data.json')
+    const list = items.provinces
 
-    L.Icon.Default.mergeOptions({
-      iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
-      iconUrl: require('leaflet/dist/images/marker-icon.png'),
-      shadowUrl: require('leaflet/dist/images/marker-shadow.png')
-    })
-
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map)
+    for (let i = 0; i < list.length; i++) {
+      if (list[i].id) {
+        console.log(list[i].name)
+        provinsiContainer.innerHTML += list[i].name
+      }
+    }
   }
 }
 export default RumahSakit

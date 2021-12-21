@@ -27,18 +27,9 @@ class DataSource {
     return response
   }
 
-  static searchHospital (keyword) {
-    return fetch(API_ENDPOINT.SEARCH_HOSPITAL = keyword)
-      .then(response => {
-        return response.json()
-      })
-      .then(responseJson => {
-        if (responseJson.teams) {
-          return Promise.resolve(responseJson.teams)
-        } else {
-          return Promise.reject(`${keyword} is not found`)
-        }
-      })
+  static async search () {
+    const response = await fetch(API_ENDPOINT.SEARCH_HOSPITAL)
+    return response.json()
   }
 }
 
