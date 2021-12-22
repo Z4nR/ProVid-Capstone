@@ -1,25 +1,36 @@
+import DataSource from '../../data/data-source'
+
 const RumahSakit = {
   async render () {
     return `
-      <form name="form1" action="proses.php" method="get"> 
-        <select name="Provinsi" class="provinsi" id="provinsi">
-          <option id="optionProvinsi"></option>
-        </select>      
-      </form>
+      <div class="form-hospital">
+        <h5>Pilih Provinsi</h5>
+        <select class="select" name="" onChange=changeData() placeholder="Pilih Provinsi--" id="provinsi"></select>
+        <h5>Pilih Kota/Kabupaten</h5>
+        <select class="select" name="" placeholder="Pilih Kota--" id="city"></select>
+      </div>
     `
   },
 
   async afterRender () {
-    const provinsiContainer = document.querySelector('#optionProvinsi')
-    const items = require('../../data/other-data.json')
-    const list = items.provinces
-
-    for (let i = 0; i < list.length; i++) {
-      if (list[i].id) {
-        console.log(list[i].name)
-        provinsiContainer.innerHTML += list[i].name
-      }
+    const provinsiSelectorContainer = document.querySelector('#provinsi')
+    const provinsi = await DataSource.hospitalProv()
+    let [prov, optionProv] = ''
+    provinsi.provinces.forEach((prov) => {
+      optionProv += '<option key="' + prov.id + '"' + 'value ="' + prov.name + '">' + prov.name + '</option' + '<br>'
+    })
+    provinsiSelectorContainer.innerHTML = optionProv
+    const changeData = event => {
+      prov(event.target.value)
     }
+
+    const city = await DataSource.hospitalInCity(prov.id)
+    let optionCity = ''
+    const citySelectorContainer = document.querySelector('#city')
+    city.forEach((city) => {
+      optionCity += '<option key="' + city.id + '"' + 'value ="' + city.id + '">' + city.name + '</option' + '<br>'
+    })
+    citySelectorContainer.innerHTML = optionCity
   }
 }
 export default RumahSakit

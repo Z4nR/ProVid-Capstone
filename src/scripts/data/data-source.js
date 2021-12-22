@@ -27,8 +27,19 @@ class DataSource {
     return response
   }
 
-  static async search () {
-    const response = await fetch(API_ENDPOINT.SEARCH_HOSPITAL)
+  static async hospitalProv () {
+    const response = await fetch(API_ENDPOINT.HOSPITAL_PROV_DATA)
+    return response.json()
+  }
+
+  static async hospitalInCity (provinceId) {
+    const response = await fetch(API_ENDPOINT.HOSPITAL_CITY_IN_PROV(provinceId))
+    const { cities } = await response.json()
+    return cities
+  }
+
+  static async searchHospital (provinceId, cityId, type) {
+    const response = await fetch(API_ENDPOINT.SEARCH_HOSPITAL(provinceId, cityId, type))
     return response.json()
   }
 }
