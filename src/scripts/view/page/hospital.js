@@ -30,6 +30,7 @@ const RumahSakit = {
     const labelProv = document.createElement('label')
     labelProv.classList.add('label-prov')
     labelProv.innerHTML = 'Pilih Provinsi'
+
     const selectProv = document.createElement('select')
     selectProv.classList.add('select')
 
@@ -50,8 +51,8 @@ const RumahSakit = {
     const labelCity = document.createElement('label')
     labelCity.classList.add('label-city')
     labelCity.innerHTML = 'Pilih Kabupaten/Kota'
+
     const selectCity = document.createElement('select')
-    selectCity.classList.add('select', 'city-select')
 
     const optionPlaceHolderCity = document.createElement('option')
     optionPlaceHolderCity.disabled = true
@@ -70,7 +71,6 @@ const RumahSakit = {
       })
       const oldData = document.querySelector('.city-select')
       if (oldData) formCity.removeChild(oldData)
-      formCity.appendChild(selectCity)
     }
 
     formProv.appendChild(labelProv)
@@ -78,8 +78,11 @@ const RumahSakit = {
     formCity.appendChild(labelCity)
     formCity.appendChild(selectCity)
 
-    const onClickSearch = async () => {
-      const search = await DataSource.searchHospital()
+    const onClickSearch = async (e) => {
+      const { selectedIndex } = e.target.options
+      const prov = provinsi.provinces[selectedIndex]
+      const city = city[selectedIndex]
+      await DataSource.searchHospital(prov.id, city.id)
     }
 
     btnSearch.addEventListener('click', onClickSearch)
