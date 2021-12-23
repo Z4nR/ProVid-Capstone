@@ -41,7 +41,7 @@ header-container {
 
 .header_title {
     font-weight: 400;
-    font-size: 2em;
+    font-size: x-large;
     margin: 0.5em 0.25em;
     display: inline-block;
     color: black;
@@ -90,7 +90,7 @@ header-container {
 
 .nav a:hover {
     text-decoration: underline;
-    color: black;
+    color: rgb(153, 147, 147);
 }
    
 /*
@@ -124,8 +124,8 @@ main {
 }
 
 .vaksin__label {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: large;
+    font-weight: 500;
     text-align: left;
     margin-bottom: 10px;
 }
@@ -155,13 +155,13 @@ main {
 
 .post-item__totalSasaran {
     font-weight: 500;
-    color: rgb(122, 120, 120);
+    color: rgb(80, 78, 78);
     text-align: center;
     padding-bottom: 10px;
 }
 
 .post-item__titleSasaran {
-    color: rgb(122, 120, 120);
+    color: rgb(170, 169, 169);
     text-align: center;
 }
 
@@ -182,24 +182,27 @@ main {
 
 .vaksinImage{
     width: 18%;
+    margin-top: auto;
     object-fit: cover;
     object-position: center;
 }
 
 .vaksinInfo {
-    padding-left: 70px;
+    padding-left: 30px;
     padding-top: 5px;
     text-align: center;
+    width: 100%;
 }
   
 .vaksinInfo > h2 {
     font-weight: 500;
-    color: rgb(122, 120, 120);
+    color: rgb(80, 78, 78);
 }
   
 .vaksinInfo > p {
-    margin-top: 10px;
-    color: rgb(122, 120, 120);
+    margin-bottom: 25px;
+    margin-top: 8px;
+    color: rgb(170, 169, 169);
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -209,9 +212,11 @@ main {
 
 .update {
     margin-top: 10px;
-    font-weight: lighter;
+    color: rgb(170, 169, 169);
+    font-weight: 400;
     text-align: right;
     margin-bottom: 60px;
+    border-bottom: rgb(170, 169, 169);;
 }
 
 /*
@@ -225,10 +230,9 @@ main {
 }
 
 .protection__label {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: large;
+    font-weight: 500;
     text-align: left;
-    margin-bottom: 10px;
 }
 
 .protection__label::after {
@@ -237,18 +241,18 @@ main {
 }
 
 .post-item-contentProtect {
-    padding: 32px;
+    padding: 16px;
     height: auto;
     display: flex;
     margin-bottom: 18px;
     border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 1px;
 }
 
 .protectIcon{
     width: 50px;
     height: 50px;
+    margin-top: 30px;
     align-items: center;
     object-fit: cover;
     object-position: center;
@@ -258,15 +262,15 @@ main {
     padding: 16px;
 }
   
-.protectionInfo> h2 {
-    font-weight: lighter;
-    color: rgb(122, 120, 120);
+.protectionInfo> h4 {
+    font-weight: 600;
+    color: rgb(80, 78, 78);
 }
   
 .protectionInfo > p {
     margin-top: 10px;
     color: rgb(122, 120, 120);
-    font-size: small;
+    font-size: 80%;
     text-align: justify;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -282,13 +286,12 @@ main {
  .varian {
     width: 100%;
     text-align: center;
-    border-left: 1.5px solid rgb(85, 82, 82);
     padding: 10px
 }
 
 .varian__label {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: large;
+    font-weight: 500;
     text-align: left;
     margin-bottom: 10px;
 }
@@ -304,10 +307,10 @@ main {
 }
 
 .post-item-nameVarian {
-    color: rgb(61, 60, 60);
+    color: rgb(80, 78, 78);
     font-weight: 800;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 20px;
 }
 
 .post-item-countryVarian, .post-item-symptomsVarian {
@@ -320,14 +323,14 @@ main {
 /*
   virus
  */
-
 .virus {
     text-align: left;
-    border : 1.5px solid rgb(85, 82, 82);
     padding: 10px
 }
 .post-item-virus {
     overflow: hidden;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 /*
@@ -407,31 +410,58 @@ footer p {
 /*
   Search Hospital
 */
-.form {
-    width:500px;
-    margin:50px auto;
-    margin-bottom: 20px;
+.form-hospital{
+    border: 1px solid #c1c1c1;
+    max-width: 400px;
+    padding: 10px;
+    margin: auto;
 }
-.search {
-    padding:8px 15px; 
-    background: #f0f8ff; 
-    border:2px solid #a7acac;
+.rujukan{
+    padding-bottom: 20px;
+    color: rgb(80, 78, 78);
+    font-size: medium;
+    text-align: center;
 }
-.button {
+.select{
+    width: 50%;
+    height: 20px;
+    border-radius: 5px;
+    align-items: center;
+}
+.label-prov{
+    color: rgb(80, 78, 78);
+    font-size: medium;
+    margin-right: 80px;
+}
+.label-city{
+    color: rgb(80, 78, 78);
+    font-size: medium;
+    margin-right: 21px;
+}
+.btn-search {
     position:relative;
-    left:-4px; 
-    padding:10px 15px; 
+    width: 96%;
+    height: 25px;
+    border-radius: 5px;
     border:0px solid #a7acac;
     background-color: #a7acac; 
     color:#fafafa;
     font-weight:bold;
 }
-.button:hover {
+.btn-search:hover {
     background: #68a8a8;          
     color:#fafafa;
 }
-.button:active {
+.btn-search:active {
     background:#a7acac;
+}
+.prov-container{
+    margin-bottom: 10px;
+    align-content: center;
+    align-items: center;
+}
+.city-container{
+    margin-bottom: 10px;
 }
 
 /*

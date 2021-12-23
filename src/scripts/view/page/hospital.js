@@ -4,6 +4,7 @@ const RumahSakit = {
   async render () {
     return `
       <div class="form-hospital">
+        <h3 class="rujukan">Rumah Sakit Rujukan</h3>
         <div class="prov-container"></div>
         <div class="city-container"></div>
         <div class="btn-box">
@@ -29,7 +30,7 @@ const RumahSakit = {
 
     const labelProv = document.createElement('label')
     labelProv.classList.add('label-prov')
-    labelProv.innerHTML = 'Pilih Provinsi'
+    labelProv.innerHTML = 'Pilih Provinsi '
     const selectProv = document.createElement('select')
     selectProv.classList.add('select')
 
@@ -49,7 +50,7 @@ const RumahSakit = {
 
     const labelCity = document.createElement('label')
     labelCity.classList.add('label-city')
-    labelCity.innerHTML = 'Pilih Kabupaten/Kota'
+    labelCity.innerHTML = 'Pilih Kabupaten/Kota '
     const selectCity = document.createElement('select')
     selectCity.classList.add('select', 'city-select')
 

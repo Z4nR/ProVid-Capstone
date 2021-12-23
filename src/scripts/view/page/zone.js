@@ -7,6 +7,7 @@ import data from '../../data/other-data.json'
 const Zona = {
   async render () {
     return `
+    <h1 class="vaksin__label" > Zona PPKM</h1 >
     <section class="map-box">
       <div id="map">
       </div>
