@@ -7,9 +7,9 @@ const API_ENDPOINT = {
   VACCINE: `${CONFIG.VACCINE_URL}vaksin/`,
   HOSPITAL_PROV_DATA: `${CONFIG.HOSPITAL_URL}get-provinces`,
   HOSPITAL_CITY_IN_PROV: (province) => `${CONFIG.HOSPITAL_URL}get-cities?provinceid=${province}`,
-  SEARCH_HOSPITAL: (prov, city, type) => `${CONFIG.HOSPITAL_URL}get-hospitals?provinceid=${prov}&cityid=${city}&type=${type}`,
+  SEARCH_HOSPITAL: (prov, city) => `${CONFIG.HOSPITAL_URL}get-hospitals?provinceid=${prov}&cityid=${city}&type=1`,
   HOSPITAL_MAP: (hospitalId) => `${CONFIG.HOSPITAL_URL}get-hospital-map?hospitalid=${hospitalId}`,
-  HOSPITAL_DETAIL: (hospitalId, type) => `${CONFIG.HOSPITAL_URL}get-bed-detail?hospitalid=${hospitalId}&type=${type}`
+  HOSPITAL_DETAIL: (hospitalId) => `${CONFIG.HOSPITAL_URL}get-bed-detail?hospitalid=${hospitalId}&type=1}`
 }
 
 export default API_ENDPOINT
