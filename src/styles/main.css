@@ -412,15 +412,11 @@ footer p {
 */
 .form-hospital{
     border: 1px solid #c1c1c1;
-    max-width: 400px;
+    width: 100%;
     padding: 10px;
     margin: auto;
-}
-.rujukan{
-    padding-bottom: 20px;
-    color: rgb(80, 78, 78);
-    font-size: medium;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
 }
 .select{
     width: 50%;
@@ -431,17 +427,18 @@ footer p {
 .label-prov{
     color: rgb(80, 78, 78);
     font-size: medium;
-    margin-right: 80px;
+    margin-right: 2px;
 }
 .label-city{
     color: rgb(80, 78, 78);
     font-size: medium;
-    margin-right: 21px;
+    margin-right: 2px;
 }
+
 .btn-search {
-    position:relative;
-    width: 96%;
-    height: 25px;
+    margin-left: 20px;
+    height: 20px;
+    width: 100px;
     border-radius: 5px;
     border:0px solid #a7acac;
     background-color: #a7acac; 
@@ -456,12 +453,10 @@ footer p {
     background:#a7acac;
 }
 .prov-container{
-    margin-bottom: 10px;
-    align-content: center;
-    align-items: center;
+    width: 50%;
 }
 .city-container{
-    margin-bottom: 10px;
+    width: 50%;
 }
 
 /*

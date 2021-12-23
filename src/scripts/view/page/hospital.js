@@ -4,7 +4,6 @@ const RumahSakit = {
   async render () {
     return `
       <div class="form-hospital">
-        <h3 class="rujukan">Rumah Sakit Rujukan</h3>
         <div class="prov-container"></div>
         <div class="city-container"></div>
         <div class="btn-box">
