@@ -29,8 +29,12 @@ const RumahSakit = {
 
     const labelProv = document.createElement('label')
     labelProv.classList.add('label-prov')
+<<<<<<< HEAD
     labelProv.innerHTML = 'Pilih Provinsi'
 
+=======
+    labelProv.innerHTML = 'Pilih Provinsi '
+>>>>>>> 66f4987a8c69879bac99ee495e791c7235a938f9
     const selectProv = document.createElement('select')
     selectProv.classList.add('select')
 
@@ -50,8 +54,12 @@ const RumahSakit = {
 
     const labelCity = document.createElement('label')
     labelCity.classList.add('label-city')
+<<<<<<< HEAD
     labelCity.innerHTML = 'Pilih Kabupaten/Kota'
 
+=======
+    labelCity.innerHTML = 'Pilih Kabupaten/Kota '
+>>>>>>> 66f4987a8c69879bac99ee495e791c7235a938f9
     const selectCity = document.createElement('select')
 
     const optionPlaceHolderCity = document.createElement('option')
