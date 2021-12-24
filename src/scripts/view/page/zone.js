@@ -75,9 +75,11 @@ const Zona = {
       return this._div
     }
     info.update = function (props) {
-      this._div.innerHTML = '<h4>Status Pandemi Covid di Indonesia</h4>' + (props
-        ? '<b>' + props.Name + '</b><br />' + props.density + '</b><br />' + ' Update Terakhir : ' + props.date
-        : 'Pilih satu wilayah')
+      this._div.innerHTML = '<h4>Status Pandemi Covid di Indonesia</h4>' + (props?.Kind === 'Province'
+        ? '<b>' + props.Name + '</b><br />' + props.density + ' orang dirawat </b><br />' + ' Update Terakhir : ' + props.date
+        : props?.Kind === 'City'
+          ? '<b>' + props.Name + '</b><br /> Resiko Penyebaran Virus: ' + props.density + ' </b><br />' + ' Update Terakhir : ' + props.date
+          : 'Pilih satu wilayah')
     }
     info.addTo(map)
 
@@ -95,9 +97,9 @@ const Zona = {
     }
     provIndicator.addTo(map)
 
-    const cityIndicator = L.control({ position: 'bottomright' })
+    const cityIndicator = L.control({ position: 'bottomleft' })
     cityIndicator.onAdd = function () {
-      const div = L.DomUtil.create('div', 'info indicator')
+      const div = L.DomUtil.create('div', 'info indicator city-indicator')
       const grades = ['RESIKO TINGGI', 'RESIKO SEDANG', 'RESIKO RENDAH', 'TIDAK ADA KASUS', 'TIDAK TERDAMPAK']
       div.innerHTML += '<p>Level Resiko Kota</p>'
       for (let i = 0; i < grades.length; i++) {

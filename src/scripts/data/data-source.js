@@ -49,6 +49,12 @@ class DataSource {
     const { data } = await response.json()
     return data
   }
+
+  static async hospitalDetail (hospitalId) {
+    const response = await fetch(API_ENDPOINT.HOSPITAL_DETAIL(hospitalId))
+    const { data } = await response.json()
+    return data
+  }
 }
 
 export default DataSource

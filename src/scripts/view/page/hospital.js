@@ -1,5 +1,7 @@
 import DataSource from '../../data/data-source'
 import L from 'leaflet'
+import 'leaflet/dist/images/marker-icon-2x.png'
+import 'leaflet/dist/images/marker-shadow.png'
 import CONFIG from '../../globals/config'
 
 const RumahSakit = {
@@ -70,11 +72,17 @@ const RumahSakit = {
       formCity.appendChild(selectCity)
     }
 
-    const mapLocation = [-0.45406017, 101.51926]
-    const mapZoom = 6
+    const mapLocation = [-1.2480891, 115.419]
+    const mapZoom = 5
     const map = L.map('map').setView(mapLocation, mapZoom)
+    const hospitalIcon = L.icon({
+      iconUrl: '../marker/clinic-medical-solid.svg',
+      iconSize: [38, 95],
+      iconAnchor: [22, 94],
+      popupAnchor: [-3, -76]
+    })
 
-    btnSearch.addEventListener('click', async () => {
+    btnSearch.addEventListener('click', () => {
       const selectProv = document.querySelector('.prov-select')
       const { selectedIndex: selectedProv } = selectProv
       const p = provinces[selectedProv]
@@ -82,23 +90,23 @@ const RumahSakit = {
       const selectCity = document.querySelector('.city-select')
       const { selectedIndex: selectedCity } = selectCity
       const c = cityList[selectedCity]
-
-      const search = await DataSource.searchHospital(p.id, c.id)
-
-      search.forEach(async data => {
-        const hosId = await DataSource.hospitalMap(data.id)
-        console.log(hosId.lat, hosId.long)
-        L.marker([hosId.lat, hosId.long]).addTo(map)
-      })
-
-      // hosId.forEach(data => {
-      //   L.marker([data.lat, data.long]).addTo(map)
-      //   console.log(data.lat, data.long)
-      // })
-
-      // const marker = L.marker().addTo(map)
-      // marker.bindPopup().openPopup()
+      searchData(p.id, c.id)
     })
+
+    const searchData = async (p, c) => {
+      const search = await DataSource.searchHospital(p, c)
+
+      search.forEach(data => {
+        hospital(data)
+      })
+    }
+
+    const hospital = async data => {
+      const hosMap = await DataSource.hospitalMap(data.id)
+      const hosDtl = await DataSource.hospitalDetail(data.id)
+      const marker = L.marker([hosMap.lat, hosMap.long], { icon: hospitalIcon }).addTo(map)
+      marker.bindPopup(hosDtl.name + '<br>' + hosDtl.address + '<br>' + hosDtl.phone + '<br>' + hosDtl.bedDetail).openPopup()
+    }
 
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=' + CONFIG.MapBox_Token, {
       id: 'mapbox/streets-v11',
