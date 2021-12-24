@@ -8,8 +8,8 @@ const RumahSakit = {
   async render () {
     return `
       <div class="form-hospital">
-        <div class="prov-container"></div>
-        <div class="city-container"></div>
+        <div class="select-box prov-container"></div>
+        <div class="select-box city-container"></div>
         <div class="btn-box">
           <button class="btn-search" id="searchData" type="submit">Cari</button>
         </div>
@@ -34,7 +34,7 @@ const RumahSakit = {
     }
 
     const labelProv = document.createElement('label')
-    labelProv.classList.add('label-prov')
+    labelProv.classList.add('label')
     labelProv.innerHTML = 'Pilih Provinsi '
     const selectProv = document.createElement('select')
     selectProv.classList.add('select', 'prov-select')
@@ -49,12 +49,12 @@ const RumahSakit = {
     formProv.appendChild(labelProv)
     formProv.appendChild(selectProv)
 
-    const labelCity = document.createElement('label')
-    labelCity.classList.add('label-city')
-    labelCity.innerHTML = 'Pilih Kabupaten/Kota '
-    formCity.appendChild(labelCity)
-
     const citySelect = async (provId) => {
+      const labelCity = document.createElement('label')
+      labelCity.classList.add('label')
+      labelCity.innerHTML = 'Pilih Kabupaten/Kota '
+      formCity.appendChild(labelCity)
+
       const city = await DataSource.hospitalInCity(provId)
       cityList = city
 
@@ -104,8 +104,12 @@ const RumahSakit = {
     const hospital = async data => {
       const hosMap = await DataSource.hospitalMap(data.id)
       const hosDtl = await DataSource.hospitalDetail(data.id)
+
       const marker = L.marker([hosMap.lat, hosMap.long], { icon: hospitalIcon }).addTo(map)
-      marker.bindPopup(hosDtl.name + '<br>' + hosDtl.address + '<br>' + hosDtl.phone + '<br>' + hosDtl.bedDetail).openPopup()
+      marker.bindPopup(hosDtl.name + '<br>' + hosDtl.address + '<br>' + '<a href="' + hosMap.gmaps + '">Lokasi</a>' + '<br>' +
+      '<a href="tel:' + hosDtl.phone + '">' + hosDtl.phone + '</a>' + '<br>' +
+      'Jumlah tempat tidur yang tersedia :' + data.bed_availability + ' tempat tidur kosong dan ' + data.queue + ' dalam antrian' +
+      '<br>' + '(' + data.info + ')').openPopup()
     }
 
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=' + CONFIG.MapBox_Token, {

@@ -395,39 +395,53 @@ footer p {
   Search Hospital
 */
 .form-hospital{
-    border: 1px solid #c1c1c1;
+    border: 1px solid #05a3ff;
     width: 100%;
     padding: 10px;
     margin: auto;
     display: flex;
     flex-direction: row;
 }
+
+.select-box {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
 .select{
-    width: 50%;
-    height: 20px;
+    width: 100%;
+    border: 2px solid #05a3ff;
     border-radius: 5px;
-    align-items: center;
-}
-.label-prov{
-    color: rgb(80, 78, 78);
     font-size: medium;
-    margin-right: 2px;
+    padding: 10px;
+    margin-bottom: 8px;
+    align-items: center;
+    box-sizing: border-box;
 }
-.label-city{
-    color: rgb(80, 78, 78);
+
+.label{
+    color: #05a3ff;
     font-size: medium;
     margin-right: 2px;
 }
 
+.btn-box {
+    width: 35%;
+    margin: 5px;
+}
+
 .btn-search {
-    margin-left: 20px;
-    height: 20px;
-    width: 100px;
+    width: 100%;
     border-radius: 5px;
-    border:0px solid #a7acac;
-    background-color: #a7acac; 
     color:#fafafa;
-    font-weight:bold;
+    font-size: medium;
+    padding: 10px 12px;
+    border: 2px solid #05a3ff;
+    color: black;
+    margin-top: 25px;
+    cursor: pointer;
 }
 .btn-search:hover {
     background: #68a8a8;          
@@ -435,12 +449,6 @@ footer p {
 }
 .btn-search:active {
     background:#a7acac;
-}
-.prov-container{
-    width: 50%;
-}
-.city-container{
-    width: 50%;
 }
 
 /*
