@@ -1,8 +1,13 @@
-posts {
+.posts {
     display: grid;
     grid-column-gap: 32px;
     grid-row-gap: 16px;
     width: 100%;
+}
+
+.credit__posts {
+    display: grid;
+    grid-row-gap: 16px;
 }
 
 .virus {
@@ -89,6 +94,20 @@ posts {
     }
 }
 
+@media screen and (min-width: 455px) {
+    .about-product {
+        padding: 16px 16px;
+    }
+
+    .product__title {
+        font-size: 28px;
+    }
+
+    .product__description {
+        font-size: 16px;
+    }
+}
+
 @media screen and (min-width: 500px) {
     .header_menu {
         display: none;
@@ -113,10 +132,49 @@ posts {
     }
 }
 
+@media screen and (min-width: 700px) {
+    .credit__posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 16px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .about-product {
+        margin: 0 auto;
+        max-width: 650px;
+    }
+
+    .credit-item__content {
+        padding: 16px 32px 32px 32px;
+    }
+
+    .credit-item__title {
+        font-size: 18px;
+    }
+
+    .credit-item__description {
+        font-size: 14px;
+    }
+}
+
 @media screen and (min-width: 800px) {
     .nav__list {
         max-width: 800px;
         margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .our-product {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-product {
+        padding: 16px 32px;
     }
 }
 
@@ -134,16 +192,25 @@ posts {
         grid-column-gap: 26px;
         grid-row-gap: 16px;
     }
+
+    .credit__posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-
     .posts {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
     .virus {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .our-product {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }

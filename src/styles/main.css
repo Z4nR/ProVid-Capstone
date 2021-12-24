@@ -327,6 +327,125 @@ main {
 }
 
 /*
+ * headline
+ */
+.about {
+    padding: 16px;
+}
+
+.our-photo {
+    width: 100%;
+}
+
+.our-photo img {
+    width: 100%;
+}
+
+.our-photo figcaption {
+    text-align: center;
+    color: #666666;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.about-product {
+    width: 100%;
+    padding: 16px 0;
+}
+
+.product__title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.product__description {
+    font-size: 12px;
+    margin-top: 12px;
+    text-align: justify;
+}
+
+/*
+ * credit
+ */
+
+.credit {
+    width: 100%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.credit__label {
+    font-size: 32px;
+    font-weight: lighter;
+}
+
+.credit__label::after {
+    content: '';
+    margin-top: 16px;
+    display: block;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/*
+ * credit
+ */
+
+.credit__posts {
+    margin: 32px auto auto;
+    text-align: left;
+    overflow: auto;
+}
+
+/*
+ * credit item
+ */
+
+.credit-item {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.credit-item__content {
+    padding: 16px;
+}
+
+.post-item__label {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.credit-item__author {
+    color: red;
+    text-decoration: none;
+}
+
+.credit-item__title {
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 16px;
+    transition: 0.3s opacity;
+}
+
+.credit-item__title:hover {
+    opacity: 0.5;
+}
+
+.credit-item__title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.credit-item__description {
+    margin-top: 16px;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+/*
   Footer
 */ 
 footer {
