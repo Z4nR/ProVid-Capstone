@@ -106,10 +106,10 @@ const RumahSakit = {
       const hosDtl = await DataSource.hospitalDetail(data.id)
 
       const marker = L.marker([hosMap.lat, hosMap.long], { icon: hospitalIcon }).addTo(map)
-      marker.bindPopup(hosDtl.name + '<br>' + hosDtl.address + '<br>' + '<a href="' + hosMap.gmaps + '">Lokasi</a>' + '<br>' +
-      '<a href="tel:' + hosDtl.phone + '">' + hosDtl.phone + '</a>' + '<br>' +
-      'Jumlah tempat tidur yang tersedia :' + data.bed_availability + ' tempat tidur kosong dan ' + data.queue + ' dalam antrian' +
-      '<br>' + '(' + data.info + ')').openPopup()
+      marker.bindPopup(hosDtl.name + '<br>' + hosDtl.address + '<br>' + 'Lokasi : <a href="' + hosMap.gmaps + '">Disini</a> ' +
+      'Hotline : <a href="tel:' + hosDtl.phone + '">' + hosDtl.phone + '</a>' +
+      '<p>Jumlah tempat tidur yang tersedia : <br>' + data.bed_availability + ' tempat tidur kosong dan ' + data.queue + ' dalam antrian' +
+      '</p>' + '(' + data.info + ')' + '<br>' + '*Akurasi lokasi tidak begitu sempurna, pengembang hanya mengambil data dari API yang ada pada publik').openPopup()
     }
 
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=' + CONFIG.MapBox_Token, {

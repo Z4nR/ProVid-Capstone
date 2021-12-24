@@ -8,7 +8,7 @@ class varianData extends HTMLElement {
     const data = this._varian
     this.innerHTML = `
             <div class="post-item-contentVarian">
-                <h4 class="post-item-nameVarian">${data.name}</h4>
+                <h2 class="post-item-nameVarian">${data.name}</h2>
                 <p class="post-item-countryVarian">Ditemukan : ${data.firstCountry} - ${data.knowDate}</p>
                 <p class="post-item-symptomsVarian">Gejala : ${data.symptoms}</p>
             </div>`

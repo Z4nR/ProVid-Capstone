@@ -10,7 +10,7 @@ class prokesData extends HTMLElement {
         <div class="post-item-contentProtect">
             <img class="protectIcon" src="${data.image}" alt="${data.name}">
             <div class="protectionInfo">
-                <h4>${data.name}</h4>
+                <h2>${data.name}</h2>
                 <p>${data.description}</p>
             </div>
         </div>`
