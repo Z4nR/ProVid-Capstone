@@ -123,6 +123,7 @@ main {
     font-weight: 500;
     text-align: left;
     margin-bottom: 10px;
+    color: rgb(92, 188, 233);
 }
 
 .vaksin__label::after {
@@ -139,65 +140,78 @@ main {
     grid-row-start: 1; /* dan baris garis pertama */
     grid-row-end: 3; /* kemudian berakhir di baris garis ketiga */
 }
+
 .map{
     width: 100%;
 }
 
 .post-item__totalSasaran {
-    font-weight: 500;
-    color: rgb(80, 78, 78);
+    padding-top: 10px;
     text-align: center;
-    padding-bottom: 10px;
-    margin: auto;
+    font-size: large;
+    font-weight: 500;
+    color: white;
+    background:rgb(92, 188, 233);
+    border-radius: 4px;
 }
 
 .post-item__titleSasaran {
-    color: rgb(170, 169, 169);
-    text-align: center;
     margin: auto;
+    font-size: large;
+    font-weight: 500;
+    padding-top: 10px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(170, 169, 169);
 }
 
 .post-item-vaksin {
+    overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    overflow: hidden;
 }
 
-.post-item-contentVaksin {
+.vaksin-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.title {
+    grid-column-start: 1;
+    grid-column-end: 3;
     padding: 16px;
-    height: 100%;
-    display: flex;
-    border-radius: 10px;
 }
-
-.vaksinImage{
-    width: 20%;
+  
+.title-vaksin {
+    font-size: large;
+    font-weight: 500;
+    padding: 10px;;
+    text-align: center;
+    color: rgb(170, 169, 169);
+}
+  
+.img-vaksin {
+    padding: 8px;
+    width: 70%;
     object-position: center;
 }
 
-.vaksinInfo {
-    text-align: center;
-    width: 100%;
-    padding: 32px;
+.total {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 8px;;
 }
   
-.vaksinInfo > h2 {
-    font-weight: 500;
-    color: rgb(80, 78, 78);
-    background: rgb(155, 150, 150);
+.total-box {
+    background-color: rgb(92, 188, 233);
     border-radius: 4px;
-    width: 100%;
 }
   
-.vaksinInfo > p {
-    margin-bottom: 8px;
-    margin-top: 8px;
-    color: rgb(170, 169, 169);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 10;
+.total-vaksin {
+    font-size: large;
+    font-weight: 500;
+    text-align: center;
+    color: white;
 }
 
 .update {
@@ -317,7 +331,6 @@ main {
  */
 .virus {
     text-align: left;
-    padding: 10px
 }
 .post-item-virus {
     overflow: hidden;
@@ -473,3 +486,5 @@ footer p {
 ::-webkit-scrollbar {
     width: 5px;
 }
+
+  

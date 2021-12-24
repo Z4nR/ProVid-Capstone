@@ -17,40 +17,64 @@ class vaksinData extends HTMLElement {
                 </div>
             </article>
             <article class="post-item-vaksin">
-                <div  class="post-item-contentVaksin">
-                    <img class="vaksinImage" src="../image/petugas-publik.svg">
-                    <div class="vaksinInfo">
-                        <p>Vaksinasi Petugas Publik</p>
-                        <h2>${vaksin.sasaranvaksinpetugaspublik}</h2>                            
-                    </div>
+            <div  class="vaksin-content">
+            <div class="title">
+                <p class="title-vaksin">Vaksinasi Petugas Publik</p>
+            </div>
+            <div class="img-vaksin">
+                <img src="../image/petugas-publik.svg">
+            </div>
+            <div class="total">
+                <div class="total-box">
+                  <h2 class="total-vaksin">Total Vaksinasi : ${vaksin.sasaranvaksinpetugaspublik}</h2>
                 </div>
+            </div>
+        </div>
             </article>
             <article class="post-item-vaksin">
-                <div  class="post-item-contentVaksin">
-                    <img class="vaksinImage" src="../image/lansia.svg">
-                    <div class="vaksinInfo">
-                        <p>Vaksinasi Lansia</p>
-                        <h2>${vaksin.sasaranvaksinlansia}</h2>                            
-                    </div>
+            <div  class="vaksin-content">
+            <div class="title">
+                <p class="title-vaksin">Vaksinasi Lansia</p>
+            </div>
+            <div class="img-vaksin">
+                <img src="../image/lansia.svg">
+            </div>
+            <div class="total">
+                <div class="total-box">
+                  <h2 class="total-vaksin">Total Vaksinasi : ${vaksin.sasaranvaksinlansia}</h2>
                 </div>
+            </div>
+        </div>
             </article>
             <article class="post-item-vaksin">
-                <div  class="post-item-contentVaksin">
-                    <img class="vaksinImage" src="../image/vaksin.svg">
-                    <div class="vaksinInfo">
-                        <p>Vaksinasi Dosis Pertama</p>
-                        <h2>${vaksin.vaksinasi1}</h2>                        
-                    </div>
+            <div  class="vaksin-content">
+            <div class="title">
+                <p class="title-vaksin">Vaksinasi Dosis Pertama</p>
+            </div>
+            <div class="img-vaksin">
+                <img src="../image/vaksin.svg">
+            </div>
+            <div class="total">
+                <div class="total-box">
+                  <h2 class="total-vaksin">Total Vaksinasi : ${vaksin.vaksinasi1}</h2>
                 </div>
+            </div>
+        </div>
             </article>
             <article class="post-item-vaksin">
-                <div  class="post-item-contentVaksin">
-                    <img class="vaksinImage" src="../image/vaksin.svg">
-                    <div class="vaksinInfo">
-                        <p>Vaksinasi Dosis Kedua</p>
-                        <h2>${vaksin.vaksinasi2}</h2>                            
-                    </div>
+            <div  class="vaksin-content">
+            <div class="title">
+                <p class="title-vaksin">Vaksinasi Dosis Kedua</p>
+            </div>
+            <div class="img-vaksin">
+                <img src="../image/vaksin.svg">
+            </div>
+            <div class="total">
+                <div class="total-box">
+                  <h2 class="total-vaksin">Total Vaksinasi : ${vaksin.vaksinasi2}</h2>
                 </div>
+            </div>
+        </div>
             </article>
         </div>
         <h4 class="update">Terakhir Diperbarui : ${vaksin.lastUpdate}</h4>
