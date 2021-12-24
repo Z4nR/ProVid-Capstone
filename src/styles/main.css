@@ -64,11 +64,6 @@ header-container {
     border: 0;
 }
 
-.nav {
-	display: flex;
-	justify-content: flex-end;
-}
-
 .nav-list {
     padding: 0;
     margin: 0;
@@ -144,11 +139,6 @@ main {
     grid-row-start: 1; /* dan baris garis pertama */
     grid-row-end: 3; /* kemudian berakhir di baris garis ketiga */
 }
-
-.post-item-contentSasaran {
-    padding: 32px;
-}
-
 .map{
     width: 100%;
 }
@@ -173,25 +163,20 @@ main {
 
 .post-item-contentVaksin {
     padding: 16px;
-    height: 100px;;
+    height: 100%;
     display: flex;
-    margin-bottom: 18px;
     border-radius: 10px;
-    overflow: hidden;
 }
 
 .vaksinImage{
-    width: 18%;
-    margin-top: auto;
-    object-fit: cover;
+    width: 20%;
     object-position: center;
 }
 
 .vaksinInfo {
-    padding-left: 30px;
-    padding-top: 5px;
     text-align: center;
     width: 100%;
+    padding: 32px;
 }
   
 .vaksinInfo > h2 {
@@ -200,7 +185,7 @@ main {
 }
   
 .vaksinInfo > p {
-    margin-bottom: 25px;
+    margin-bottom: 8px;
     margin-top: 8px;
     color: rgb(170, 169, 169);
     overflow: hidden;

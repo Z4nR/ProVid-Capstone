@@ -1,5 +1,7 @@
-const Spinner = () => `
+function Spinner () {
+  return `
   <div class="loader"></div>
-`;
+`
+}
 
-export default Spinner;
+export default Spinner
