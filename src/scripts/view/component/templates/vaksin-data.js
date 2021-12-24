@@ -7,7 +7,7 @@ class vaksinData extends HTMLElement {
   render () {
     const vaksin = this._vaksin
     this.innerHTML = `
-        <h1 class="vaksin__label" > Vaksinasi</h1 >
+        <h1 class="__label" > Vaksinasi</h1 >
         <div class="posts">
             <article class="post-item-sasaran">
                 <div class="post-item-contentSasaran">

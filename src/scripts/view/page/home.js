@@ -13,12 +13,12 @@ const Beranda = {
           <div class="virus">
             <article class="post-item-virus">
               <div class="protection" id="protection">
-                <h1 class="protection__label">Protokol Kesehatan</h1>
+                <h1 class="__label">Protokol Kesehatan</h1>
               </div>
             </article>
             <article class="post-item-virus">
               <div class="varian" id="varian">
-                <h1 class="varian__label">Varian Covid</h1>
+                <h1 class="__label">Varian Covid</h1>
               </div>
             </article>
           </div>
