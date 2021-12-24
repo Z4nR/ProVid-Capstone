@@ -6,8 +6,8 @@ const Tentang = {
     <section class="about">
         <article class="our-product">
             <figure class="our-photo">
-                <img src="" alt="Team Photo">
-                <figcaption>Tim CSD-108</figcaption>
+                <img src="../image/DescriptionnWeb.jpeg" alt="Team Photo">
+                <figcaption>Screenshot Project dari Tim CSD-108</figcaption>
             </figure>
             <div class="about-product">
                 <h1 class="product__title">Apa itu ProVid?</h1>
