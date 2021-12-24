@@ -124,9 +124,6 @@
     }
 }
 
-<<<<<<< HEAD
-@media screen and (min-width: 600px) {
-=======
 @media screen and (max-width: 770px) {
     .vaksinInfo > h2 {
         font-weight: 500;
@@ -140,6 +137,20 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 10px;
+        grid-row-gap: 16px;
+    }
+
+    .posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 26px;
+        grid-row-gap: 16px;
+    }
+
+    .virus {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 26px;
         grid-row-gap: 16px;
     }
 }
@@ -182,21 +193,6 @@
 }
 
 @media screen and (min-width: 1000px) {
->>>>>>> 08628da9096b9a61ef55850e3f4bca01455732de
-    .posts {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 26px;
-        grid-row-gap: 16px;
-    }
-
-    .virus {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 26px;
-        grid-row-gap: 16px;
-    }
-
     .credit__posts {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
