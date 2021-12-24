@@ -68,7 +68,7 @@
     }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 541px) {
     .header_menu {
         display: none;
     }
