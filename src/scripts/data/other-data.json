@@ -342,46 +342,34 @@
             ]
         }
     ],
-    "provinces": [
+    "github" : [
         {
-            "id": "11prop",
-            "name": "Aceh"
+            "author" : "I Gusti Ngurah Satya Wikananda",
+            "repo" : "https://github.com/satyawikananda",
+            "link" : "https://github.com/satyawikananda/rs-bed-covid-indo-api/",
+            "title" : "RS Bed Covid API",
+            "desc" : "API untuk data jumlah ketersediaan tempat tidur di rumah sakit Indonesia"
         },
         {
-            "id": "12prop",
-            "name": "Sumatera Utara"
+            "author": "Vincent Haryadi",
+            "repo": "https://github.com/vincenth19",
+            "link": "https://github.com/vincenth19/covidtracker-backend",
+            "title": "Covid Tracker BackEnd",
+            "desc": "API yang digunakan untuk mendapatkan data tingkat resiko penyebaran di sebuah kota"
         },
         {
-            "id": "13prop",
-            "name": "Sumatera Barat"
+            "author": "Reynadi Andreas Priesley",
+            "repo": "https://github.com/Reynadi531",
+            "link": "https://github.com/Reynadi531/api-covid19-indonesia-v2",
+            "title": "API Covid19 Indonesia",
+            "desc": "Digunakan untuk mengetahui persebaran data virus corona di Indonesia"
         },
         {
-            "id": "14prop",
-            "name": "Riau"
-        },
-        {
-            "id": "15prop",
-            "name": "Jambi"
-        },
-        {
-            "id": "16prop",
-            "name": "Sumatera Selatan"
-        },
-        {
-            "id": "17prop",
-            "name": "Bengkulu"
-        },
-        {
-            "id": "18prop",
-            "name": "Lampung"
-        },
-        {
-            "id": "19prop",
-            "name": "Kepulauan Bangka Belitung"
-        },
-        {
-            "id": "20prop",
-            "name": "Kepulauan Riau"
+            "author": "Reynadi Andreas Priesley",
+            "repo": "https://github.com/Reynadi531",
+            "link": "https://github.com/Reynadi531/vaksincovid19-api",
+            "title": "API Vaksin Covid19 Indonesia",
+            "desc": "Digunakan untuk mengetahui data secara umum vaksinasi di Indonesia"
         }
     ]
 }
