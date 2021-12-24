@@ -25,7 +25,7 @@ header {
     min-height: 56px;
     transition: min-height 0.3s;
     padding: 16px;
-    background-color: white;
+    background-color: #05a3ff;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
 }
 
@@ -44,7 +44,7 @@ header-container {
     font-size: x-large;
     margin: 0.5em 0.25em;
     display: inline-block;
-    color: black;
+    color: white;
 }
 
 .hamburger-container {
@@ -59,8 +59,8 @@ header-container {
     min-height: 44px;
     font-size: 25px;
     text-decoration: none;
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: #05a3ff;
     border: 0;
 }
 
@@ -80,7 +80,7 @@ header-container {
     display: inline-block;
     padding: 1.3em;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .nav a:hover {
@@ -123,6 +123,7 @@ main {
     font-weight: 500;
     text-align: left;
     margin-bottom: 10px;
+    color: rgb(92, 188, 233);
 }
 
 .vaksin__label::after {
@@ -148,11 +149,13 @@ main {
     color: rgb(80, 78, 78);
     text-align: center;
     padding-bottom: 10px;
+    margin: auto;
 }
 
 .post-item__titleSasaran {
     color: rgb(170, 169, 169);
     text-align: center;
+    margin: auto;
 }
 
 .post-item-vaksin {
@@ -182,6 +185,9 @@ main {
 .vaksinInfo > h2 {
     font-weight: 500;
     color: rgb(80, 78, 78);
+    background: rgb(155, 150, 150);
+    border-radius: 4px;
+    width: 100%;
 }
   
 .vaksinInfo > p {
@@ -200,7 +206,7 @@ main {
     color: rgb(170, 169, 169);
     font-weight: 400;
     text-align: right;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     border-bottom: rgb(170, 169, 169);;
 }
 
@@ -218,6 +224,7 @@ main {
     font-size: large;
     font-weight: 500;
     text-align: left;
+    color: rgb(92, 188, 233);
 }
 
 .protection__label::after {
@@ -247,8 +254,8 @@ main {
     padding: 16px;
 }
   
-.protectionInfo> h4 {
-    font-weight: 600;
+.protectionInfo> h2 {
+    font-weight: 500;
     color: rgb(80, 78, 78);
 }
   
@@ -279,6 +286,7 @@ main {
     font-weight: 500;
     text-align: left;
     margin-bottom: 10px;
+    color: rgb(92, 188, 233);
 }
 
 .varian_label::after {
@@ -310,12 +318,11 @@ main {
  */
 .virus {
     text-align: left;
-    padding: 10px
 }
 .post-item-virus {
-    overflow: hidden;
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    overflow: hidden;;
 }
 
 /*
@@ -323,7 +330,7 @@ main {
 */ 
 footer {
     position: absolute;
-    background-color: #aaa;
+    background-color: #05a3ff;
     padding: 16px;
     width: 100%;
     text-align: center;
@@ -332,7 +339,7 @@ footer {
 }
 footer p {
     text-align: center;
-    color: black;
+    color: white;
     font-size: 16px;
 }
 
@@ -401,6 +408,7 @@ footer p {
     margin: auto;
     display: flex;
     flex-direction: row;
+    margin-bottom: 10px;
 }
 .select{
     width: 50%;
@@ -409,12 +417,12 @@ footer p {
     align-items: center;
 }
 .label-prov{
-    color: rgb(80, 78, 78);
+    color: rgb(131, 128, 128);
     font-size: medium;
     margin-right: 2px;
 }
 .label-city{
-    color: rgb(80, 78, 78);
+    color: rgb(131, 128, 128);
     font-size: medium;
     margin-right: 2px;
 }
@@ -430,7 +438,7 @@ footer p {
     font-weight:bold;
 }
 .btn-search:hover {
-    background: #68a8a8;          
+    background: #05a3ff;          
     color:#fafafa;
 }
 .btn-search:active {

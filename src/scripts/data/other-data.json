@@ -102,27 +102,27 @@
     "protection" : [
         {
             "name" : "Mencuci Tangan",
-            "description" : "Rutin mencuci tangan hingga bersih menggunakan sabun dan air mengalir merupakan salah satu protokol kesehatan yang cukup efektif untuk mencegah penularan virus corona. Untuk hasil yang maksimal disarankan untuk mencuci tangan setidaknya selama 20 menit",
+            "description" : "Rutin mencuci tangan hingga bersih menggunakan sabun dan air mengalir merupakan salah satu protokol kesehatan yang cukup efektif untuk mencegah penularan virus corona. Untuk hasil yang maksimal disarankan untuk mencuci tangan setidaknya selama 20 menit beberapa kali dalam sehari, terutama saat sebelum memasak atau makan, setelah menggunakan kamar mandi, setelah menutup hidung saat batuk atau bersin. Jika tidak ada tempat untuk mencuci tangan, untuk membunuh virus atau kuman-kuman yang menempel gunakan pembersih tangan (hand sanitizer) dengan kadar alkohol minimal 60%.",
             "image" : "../image/cuci-tangan.svg"
         },
         {
             "name" : "Memakai Masker",
-            "description" : "Gunakan masker saat beraktifitas di luar rumah atau ruangan",
+            "description" : "Gunakan masker saat beraktifitas di luar rumah atau ruangan. Menurut CDC, penggunaan masker di dalam rumah perlu dilakukan ketika terdapat anggota keluarga  yang terinfeksi Covid-19, terdapat anggota keluarga yang berpotensi Covid-19 dikarenakan melakukan aktifitas di luar rumah, merasa terjangkit atau mengalami gejala Covid-19, ruangan yang ditempati sempit, dan tidak bisa menjaga jarak minimal dua meter.",
             "image" : "../image/masker.svg"
         },
         {
             "name" : "Menjaga Jarak",
-            "description" : "Menjaga jarak dengan orang lain minimal 1 meter untuk menghindari terkena droplets dari lawan bicara, batuk, atau bersin, serta menghindari kerumunan, keramaian, dan berdesakan",
+            "description" : "Menjaga jarak dengan orang lain minimal 1 meter untuk menghindari terkena droplets dari lawan bicara, batuk, atau bersin, serta menghindari kerumunan, keramaian, dan berdesakan. Bila tidak memungkinkan melakukan jaga jarak, maka dapat dilakukan dengan merekayasa administrasi atau teknik lainnya. Rekayasa administrasi dapat berupa pembatasan jumlah orang, pengaturan jadwal, dan sebagainya. Sedangkan rekayasa teknis antara lain berupa pembuatan partisi, pengaturan jalur masuk dan keluar atau sebagainya.",
             "image" : "../image/jaga-jarak.svg"
         },
         {
             "name" : "Menjauhi Kerumunan",
-            "description" : "Menjauhi kerumunan saat berada di luar rumah. Oleh sebab itu, hindari tempat keramaian terutama bila sedang sakit atau berusia diatas 60 tahun (lansia).",
+            "description" : "Menjauhi kerumunan saat berada di luar rumah. Oleh sebab itu, hindari tempat keramaian terutama bila sedang sakit atau berusia diatas 60 tahun (lansia). Menurut riset lansia dan pengidap penyakit kronis memiliki resiko yang lebih tinggi terserang virus corona.",
             "image" : "../image/kerumunan.svg"
         },
         {
             "name" : "Mengurangi Mobilitas",
-            "description" : "Tidak keluar rumah kecuali terdapat keadaan yang mendesak, semakin banyak dirimu menghabiskan waktu di luar rumah, maka semakin tinggi pula terpapar virus Covid-19.",
+            "description" : "Mengurangi mobilitas merupakan salah satu protokol kesehatan yang perlu dilakukan yaitu untuk tidak keluar rumah kecuali terdapat keadaan yang mendesak, semakin banyak dirimu menghabiskan waktu di luar rumah, maka semakin tinggi pula terpapar virus Covid-19. Menurut Kemenkes, meski sehat dan tidak ada gejala penyakit, belum tentu dirimu pulang ke rumah dengan keadaan yang masih sama. Pasalnya, virus corona dapat menyebar dan menginfeksi seseorang dengan cepat. ",
             "image" : "../image/mobilitas.svg"
         }
     ],

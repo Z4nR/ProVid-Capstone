@@ -7,6 +7,7 @@ import CONFIG from '../../globals/config'
 const RumahSakit = {
   async render () {
     return `
+    <h1 class="vaksin__label" >Rumah Sakit Rujukan Covid-19</h1 >
       <div class="form-hospital">
         <div class="prov-container"></div>
         <div class="city-container"></div>
