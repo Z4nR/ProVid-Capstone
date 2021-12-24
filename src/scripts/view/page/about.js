@@ -4,6 +4,7 @@ const Tentang = {
   async render () {
     return `
     <section class="about">
+        <h1 class="__label">About Project</h1>
         <article class="our-product">
             <figure class="our-photo">
                 <img src="../image/DescriptionnWeb.jpeg" alt="Team Photo">
@@ -18,7 +19,7 @@ const Tentang = {
             </div>
         </article>
         <div class="credit">
-            <h1 class="credit__label">Thanks To : </h1>
+            <h1 class="__label">Thanks To : </h1>
             <div class="credit__posts"></div>
         </div>
     </section>
