@@ -142,6 +142,20 @@
         grid-column-gap: 10px;
         grid-row-gap: 16px;
     }
+
+    .posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 26px;
+        grid-row-gap: 16px;
+    }
+
+    .virus {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 26px;
+        grid-row-gap: 16px;
+    }
 }
 
 @media screen and (min-width: 600px) {
